@@ -3,10 +3,11 @@
 	<name>Threat Ledger</name>
 	<author>danny</author>
 	<packageId>danny.threatledger</packageId>
-	<modVersion>0.2.0</modVersion>
+	<modVersion>0.2.1</modVersion>
 	<url>https://github.com/HiDanny666/ThreatLedger</url>
 	<supportedVersions>
 		<li>1.6</li>
+		<li>1.7</li>
 	</supportedVersions>
 
 	<description>Threat Ledger shows you exactly why your colony is getting the raids it gets.

@@ -8,6 +8,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/), and versions
 
 ---
 
+## [0.2.1] - 2026-10-20
+
+### Fixed
+
+- Help & notes: long notes (for example the 1M wealth plateau in Chinese) wrapped past
+  their row and were clipped; each row is now as tall as its text.
+  Checked in game.
+
+### Added
+
+- RimWorld **1.7** is now listed in the supported versions, alongside 1.6.
+- Steam Workshop cover image (`About/Preview.png`).
+
 ## [0.2.0] - 2026-10-20
 
 The interface is rebuilt from scratch and the formula is now read from the game in full.

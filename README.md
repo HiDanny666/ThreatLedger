@@ -8,8 +8,8 @@ Threat Ledger adds one tab that lays the whole thing open — and lets you test 
 > **No Harmony patches. No game state changes. Nothing in your save.**
 > The random number generator is saved and restored around every read.
 
-- **Game version:** RimWorld 1.6
-- **Current version:** 0.2.0 — see [CHANGELOG.md](CHANGELOG.md) for what changed
+- **Game version:** RimWorld 1.6 / 1.7
+- **Current version:** 0.2.1 — see [CHANGELOG.md](CHANGELOG.md) for what changed
 - **Languages:** English, 繁體中文, 简体中文
 - **Requires:** nothing (no Harmony, no other mods, no DLC)
 - **Bug reports:** https://github.com/HiDanny666/ThreatLedger/issues
@@ -114,8 +114,8 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 > **沒有 Harmony patch，不改動遊戲狀態，不在存檔留下任何東西。**
 > 每次讀取前後都會保存並還原亂數產生器。
 
-- **遊戲版本：** RimWorld 1.6
-- **目前版本：** 0.2.0（更新內容見 [CHANGELOG.md](CHANGELOG.md)）
+- **遊戲版本：** RimWorld 1.6 / 1.7
+- **目前版本：** 0.2.1（更新內容見 [CHANGELOG.md](CHANGELOG.md)）
 - **語言：** English、繁體中文、简体中文
 - **前置需求：** 無（不需要 Harmony、其他模組或 DLC）
 - **錯誤回報：** https://github.com/HiDanny666/ThreatLedger/issues
