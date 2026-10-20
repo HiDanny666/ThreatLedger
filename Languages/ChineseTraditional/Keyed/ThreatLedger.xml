@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ================================== 標題列 ================================== -->
+	<ThreatLedger_Title>威脅帳本</ThreatLedger_Title>
+	<ThreatLedger_Button_Help>說明與提示</ThreatLedger_Button_Help>
+	<ThreatLedger_Button_Back>返回</ThreatLedger_Button_Back>
+	<ThreatLedger_Button_Settings>設定</ThreatLedger_Button_Settings>
+	<ThreatLedger_Banner_Tip>點一下開啟「說明與提示」查看詳情。</ThreatLedger_Banner_Tip>
+	<ThreatLedger_NoData>目前沒有開啟任何殖民地地圖。</ThreatLedger_NoData>
+
+	<!-- ================================ 主數字卡片 ================================ -->
+	<ThreatLedger_Card_GameValue>遊戲實際值</ThreatLedger_Card_GameValue>
+	<ThreatLedger_Headline_Caption>現在發生襲擊時會採用的威脅點數</ThreatLedger_Headline_Caption>
+	<ThreatLedger_Headline_DayChange>過去一天變化 {0} 點</ThreatLedger_Headline_DayChange>
+	<ThreatLedger_Status_Good>拆解結果與遊戲完全吻合</ThreatLedger_Status_Good>
+	<ThreatLedger_Status_Gap>有小幅差距（滑鼠移上查看）</ThreatLedger_Status_Gap>
+	<ThreatLedger_Status_Mod>其他模組改寫了公式</ThreatLedger_Status_Mod>
+	<ThreatLedger_Status_Unavailable>無法取得遊戲實際值</ThreatLedger_Status_Unavailable>
+	<ThreatLedger_Status_Tip>本模組計算結果：{0}\n遊戲實際值：{1}\n差距：{2}</ThreatLedger_Status_Tip>
+	<ThreatLedger_RaidEstimate>如果現在發生襲擊</ThreatLedger_RaidEstimate>
+	<ThreatLedger_Raid_Count>{0} 人</ThreatLedger_Raid_Count>
+	<ThreatLedger_Raid_Tip>這個派系每名襲擊者平均約 {0} 點（依各兵種被選中的機率加權平均）。範圍為 ±15%，因為遊戲會隨機決定實際兵種組成。襲擊策略（圍攻、挖地道、空投）也會改變人數。</ThreatLedger_Raid_Tip>
+
+	<!-- ================================ 公式卡片 ================================== -->
+	<ThreatLedger_Card_Formula>數字是怎麼來的</ThreatLedger_Card_Formula>
+	<ThreatLedger_Card_Formula_Wealth>故事敘述者財富：{0}</ThreatLedger_Card_Formula_Wealth>
+	<ThreatLedger_WF_WealthPoints>財富點數</ThreatLedger_WF_WealthPoints>
+	<ThreatLedger_WF_WealthPoints_Tip>故事敘述者財富 {0} 套用遊戲曲線換算：14,000 以下為 0 點，400,000 為 2,400 點，700,000 為 3,600 點，1,000,000 以上固定為 4,200 點不再增加。</ThreatLedger_WF_WealthPoints_Tip>
+	<ThreatLedger_WF_Colonists>殖民者（{0}）</ThreatLedger_WF_Colonists>
+	<ThreatLedger_WF_Colonists_Tip>以你目前的財富，每位自由殖民者值 {0} 點（貧窮時 15 點，400k 時 140 點，1M 時 200 點）。\n個人修正：受傷會降低點數（最低剩 35%），奴隸算 75%（目前 {1} 位），有 Biotech 時兒童依年齡計算（目前 {2} 位：3 歲以下為 0，13 歲一半，18 歲全額）。在休眠艙中的小人只算 30%。</ThreatLedger_WF_Colonists_Tip>
+	<ThreatLedger_WF_Animals>動物（{0}）</ThreatLedger_WF_Animals>
+	<ThreatLedger_WF_Animals_Tip>只有能學會「出擊」的馴服動物才計入，每隻值其戰鬥力的 8%。倒地的動物不計。雞之類無法訓練的動物只會增加財富。</ThreatLedger_WF_Animals_Tip>
+	<ThreatLedger_WF_Mechs>殖民地機械體（{0}）</ThreatLedger_WF_Mechs>
+	<ThreatLedger_WF_Mechs_Tip>每台殖民地機械體值其戰鬥力的一部分：貧窮時 20%，財富 400k 時 30%，1M 時 40%。倒地的機械體不計。</ThreatLedger_WF_Mechs_Tip>
+	<ThreatLedger_WF_Subhumans>亞人（{0}）</ThreatLedger_WF_Subhumans>
+	<ThreatLedger_WF_Subhumans_Tip>食屍鬼等亞人的計價方式與殖民地機械體相同：依財富計入其戰鬥力的 20% 到 40%。</ThreatLedger_WF_Subhumans_Tip>
+	<ThreatLedger_WF_Base>基礎點數</ThreatLedger_WF_Base>
+	<ThreatLedger_WF_Base_Tip>財富點數加上所有小人的點數。下面的每一層都是乘在這個數字上。</ThreatLedger_WF_Base_Tip>
+	<ThreatLedger_WF_Adaptation>× 適應係數（{0} 天）</ThreatLedger_WF_Adaptation>
+	<ThreatLedger_WF_Adaptation_Tip>故事敘述者會依你的表現調整難度，目前係數為 {0}。原版故事敘述者從 0.8 起算，沒有人員損失時會慢慢上升（約一個月到 1.0，約一年到 1.2，最高約 1.47），殖民者死亡或被暴力擊倒時會大幅下降。你的難度設定讓適應性影響以 {1}% 的強度生效。</ThreatLedger_WF_Adaptation_Tip>
+	<ThreatLedger_WF_Difficulty>× 難度</ThreatLedger_WF_Difficulty>
+	<ThreatLedger_WF_Difficulty_Tip>難度設定中的「威脅規模」。「挑戰」為 1.0，「極端」為 2.2。</ThreatLedger_WF_Difficulty_Tip>
+	<ThreatLedger_WF_NewColony>× 新殖民地（第 {0} 天）</ThreatLedger_WF_NewColony>
+	<ThreatLedger_WF_NewColony_Tip>故事敘述者會對剛建立的殖民地手下留情。原版故事敘述者在第 10 天前襲擊只有 70% 強度，到第 40 天才恢復全額。</ThreatLedger_WF_NewColony_Tip>
+	<ThreatLedger_WF_Floor>提高到下限（{0}）</ThreatLedger_WF_Floor>
+	<ThreatLedger_WF_Ceiling>壓到上限（{0}）</ThreatLedger_WF_Ceiling>
+	<ThreatLedger_WF_Clamp_Tip>遊戲送出的襲擊不會低於一個小下限（35 點到難度設定的上限之間），也不會超過 10,000 點。</ThreatLedger_WF_Clamp_Tip>
+	<ThreatLedger_WF_Unexplained>× 無法解釋的部分</ThreatLedger_WF_Unexplained>
+	<ThreatLedger_WF_Unknown_Tip>此遊戲版本無法讀取這個係數，因此以 1 計算。它的實際效果會顯示在「無法解釋的部分」那一列。</ThreatLedger_WF_Unknown_Tip>
+	<ThreatLedger_WF_Final>= 威脅點數</ThreatLedger_WF_Final>
+	<ThreatLedger_WF_Final_Tip>遊戲本身回報的數值。永遠以這個數字為準。</ThreatLedger_WF_Final_Tip>
+
+	<ThreatLedger_Unexplained_None>兩個數值一致。威脅帳本完整解釋了這場襲擊的規模。</ThreatLedger_Unexplained_None>
+	<ThreatLedger_Unexplained_Small>所有係數都已從遊戲讀取，但仍有小幅差距。通常是某個模組微調了公式，或是某位小人的健康狀態剛好在這一秒改變。主數字仍是遊戲本身的數值。</ThreatLedger_Unexplained_Small>
+	<ThreatLedger_Unexplained_Adaptation>威脅帳本與遊戲的數值有差距。此遊戲版本有部分係數無法讀取（標示為「?」），它們的效果會顯示在這裡，而不是用猜的。</ThreatLedger_Unexplained_Adaptation>
+	<ThreatLedger_Unexplained_LikelyMod>兩個數值差距很大。原版遊戲不可能出現這種情況，所以很可能有其他模組取代了威脅公式。面板仍可安心使用：主數字是遊戲本身的數值，模擬試算也會跟著實際生效的公式走。</ThreatLedger_Unexplained_LikelyMod>
+	<ThreatLedger_Unexplained_Unavailable>目前無法讀取遊戲數值，因此沒有可比對的對象。</ThreatLedger_Unexplained_Unavailable>
+
+	<!-- ================================ 財富卡片 ================================== -->
+	<ThreatLedger_Card_Wealth>財富</ThreatLedger_Card_Wealth>
+	<ThreatLedger_Cat_Items>物品</ThreatLedger_Cat_Items>
+	<ThreatLedger_Cat_Creatures>生物</ThreatLedger_Cat_Creatures>
+	<ThreatLedger_Cat_Buildings>建築</ThreatLedger_Cat_Buildings>
+	<ThreatLedger_Cat_Items_Note>所有未被戰爭迷霧遮蔽的物品，含背包內物品。</ThreatLedger_Cat_Items_Note>
+	<ThreatLedger_Cat_Creatures_Note>殖民者與動物本身的市值。</ThreatLedger_Cat_Creatures_Note>
+	<ThreatLedger_Cat_Buildings_Note>以半價計算，包含地板。</ThreatLedger_Cat_Buildings_Note>
+	<ThreatLedger_Cat_Plateau_Note>已超過 1M 上限：目前不增加點數。</ThreatLedger_Cat_Plateau_Note>
+	<ThreatLedger_Card_Points>{0} 點</ThreatLedger_Card_Points>
+	<ThreatLedger_Card_Value>市值 {0}　計入 {1}</ThreatLedger_Card_Value>
+	<ThreatLedger_Card_Wealth_Tip>顯示的點數代表「如果整個類別消失，你會少掉多少點」。由於曲線不是直線，三個數字加起來不會剛好等於總數。這是正常的，而且正是你真的處理掉它們時會發生的結果。</ThreatLedger_Card_Wealth_Tip>
+
+	<!-- ================================ 趨勢卡片 ================================== -->
+	<ThreatLedger_Card_Trend>威脅趨勢</ThreatLedger_Card_Trend>
+	<ThreatLedger_Trend_Collecting>記錄中……每個遊戲小時取樣一次，取得第二筆樣本後就會顯示圖表。</ThreatLedger_Trend_Collecting>
+	<ThreatLedger_Trend_Off>已在模組設定中關閉趨勢記錄。</ThreatLedger_Trend_Off>
+	<ThreatLedger_Trend_DaysAgo>{0} 天前</ThreatLedger_Trend_DaysAgo>
+	<ThreatLedger_Trend_Now>現在</ThreatLedger_Trend_Now>
+	<ThreatLedger_Trend_Day>近一天：{0}</ThreatLedger_Trend_Day>
+	<ThreatLedger_Trend_Week>近 7 天：{0}</ThreatLedger_Trend_Week>
+	<ThreatLedger_Trend_Range>範圍：{0} 至 {1}</ThreatLedger_Trend_Range>
+	<ThreatLedger_Trend_Samples>共 {0} 筆每小時樣本</ThreatLedger_Trend_Samples>
+	<ThreatLedger_Trend_Tip>遊戲的威脅點數，每個遊戲小時取樣一次，最多保留 20 天。樣本只存在記憶體中，絕不會寫入存檔，因此讀檔後圖表會重新開始。</ThreatLedger_Trend_Tip>
+
+	<!-- ================================ 模擬抽屜 ================================== -->
+	<ThreatLedger_Drawer_Title>模擬試算</ThreatLedger_Drawer_Title>
+	<ThreatLedger_Drawer_Hint>點一下，試算處理掉某樣東西後下一場襲擊會變成怎樣。</ThreatLedger_Drawer_Hint>
+	<ThreatLedger_Drawer_Summary>已勾選 {0} 項：{1} → {2}（{3}，{4}）</ThreatLedger_Drawer_Summary>
+	<ThreatLedger_WhatIf_Header>勾選你考慮處理掉的東西</ThreatLedger_WhatIf_Header>
+	<ThreatLedger_Filter_All>全部</ThreatLedger_Filter_All>
+	<ThreatLedger_Filter_Items>物品</ThreatLedger_Filter_Items>
+	<ThreatLedger_Filter_Buildings>建築</ThreatLedger_Filter_Buildings>
+	<ThreatLedger_Filter_Pawns>小人</ThreatLedger_Filter_Pawns>
+	<ThreatLedger_WhatIf_Search>搜尋……</ThreatLedger_WhatIf_Search>
+	<ThreatLedger_WhatIf_Empty>這張地圖上找不到符合的項目。</ThreatLedger_WhatIf_Empty>
+	<ThreatLedger_WhatIf_Refresh>重新掃描</ThreatLedger_WhatIf_Refresh>
+	<ThreatLedger_WhatIf_Clear>清除勾選</ThreatLedger_WhatIf_Clear>
+	<ThreatLedger_WhatIf_Result>試算結果</ThreatLedger_WhatIf_Result>
+	<ThreatLedger_WhatIf_Now>現在</ThreatLedger_WhatIf_Now>
+	<ThreatLedger_WhatIf_After>處理後</ThreatLedger_WhatIf_After>
+	<ThreatLedger_WhatIf_RemovedWealth>減少的故事敘述者財富：{0}</ThreatLedger_WhatIf_RemovedWealth>
+	<ThreatLedger_WhatIf_RemainingWealth>剩餘的故事敘述者財富：{0}</ThreatLedger_WhatIf_RemainingWealth>
+	<ThreatLedger_WhatIf_RemovedPawns>移除的小人：{0}</ThreatLedger_WhatIf_RemovedPawns>
+	<ThreatLedger_WhatIf_AfterRaid>襲擊人數：現在 → 處理後</ThreatLedger_WhatIf_AfterRaid>
+	<ThreatLedger_WhatIf_Clamped>你勾選的總值超過整個殖民地的財富，因此結果被限制在最低可能值。</ThreatLedger_WhatIf_Clamped>
+	<ThreatLedger_WhatIf_Explain>每一列顯示該項的市值，以及「只處理掉這一項」時下一場襲擊會改變幾點。可以同時勾選多項來合併計算。不會真的改動你的殖民地。</ThreatLedger_WhatIf_Explain>
+	<ThreatLedger_Row_Tip>市值：{0}\n計入故事敘述者財富：{1}\n只處理掉這一項：{2} 點</ThreatLedger_Row_Tip>
+
+	<ThreatLedger_Entry_AllItems>地圖上的所有物品</ThreatLedger_Entry_AllItems>
+	<ThreatLedger_Entry_AllBuildings>地圖上的所有建築</ThreatLedger_Entry_AllBuildings>
+	<ThreatLedger_Entry_Floors>所有地板</ThreatLedger_Entry_Floors>
+	<ThreatLedger_Entry_Floors_Note>地板算作建築，以半價計入。大基地鋪滿昂貴地板（黃金地磚、精緻地毯）會累積起來，但一般地板對襲擊幾乎沒影響。</ThreatLedger_Entry_Floors_Note>
+	<ThreatLedger_Entry_Prisoners>俘虜</ThreatLedger_Entry_Prisoners>
+	<ThreatLedger_Entry_Prisoners_Note>俘虜不屬於你的派系，因此既不增加財富也不增加小人點數。賣掉或釋放俘虜不會改變襲擊規模。</ThreatLedger_Entry_Prisoners_Note>
+	<ThreatLedger_Entry_SlaveTag>（奴隸）</ThreatLedger_Entry_SlaveTag>
+	<ThreatLedger_Entry_ChildTag>（兒童）</ThreatLedger_Entry_ChildTag>
+	<ThreatLedger_Entry_Colonist_Note>移除一位殖民者會同時扣掉他的市值，以及他身為小人的點數。他身上的裝備仍算在物品裡，除非你也一起勾選。</ThreatLedger_Entry_Colonist_Note>
+	<ThreatLedger_Entry_Slave_Note>奴隸不論是財富或小人點數都只算 75%。</ThreatLedger_Entry_Slave_Note>
+	<ThreatLedger_Entry_Child_Note>有 Biotech 時，兒童依年齡計算：3 歲以下不計，13 歲一半，18 歲全額。</ThreatLedger_Entry_Child_Note>
+	<ThreatLedger_Entry_Animal_Note>這些動物能學會「出擊」，所以除了市值之外，每隻還會增加其戰鬥力 8% 的小人點數。</ThreatLedger_Entry_Animal_Note>
+	<ThreatLedger_Entry_Mech_Note>殖民地機械體除了市值之外，還會依財富增加其戰鬥力一定比例的小人點數。</ThreatLedger_Entry_Mech_Note>
+	<ThreatLedger_Entry_Subhuman_Note>亞人除了市值之外，還會依財富增加其戰鬥力一定比例的小人點數。</ThreatLedger_Entry_Subhuman_Note>
+	<ThreatLedger_Entry_NoPoints_Note>這些小人只增加市值，不提供任何小人點數（無法訓練或倒地的動物、倒地的機械體）。</ThreatLedger_Entry_NoPoints_Note>
+
+	<!-- ================================== 派系 ==================================== -->
+	<ThreatLedger_Faction_Pirates>海盜</ThreatLedger_Faction_Pirates>
+	<ThreatLedger_Faction_Tribals>部落</ThreatLedger_Faction_Tribals>
+	<ThreatLedger_Faction_Mechanoids>機械族</ThreatLedger_Faction_Mechanoids>
+
+	<!-- ================================== 提示 ==================================== -->
+	<ThreatLedger_Help_NotesTitle>這個殖民地的提示</ThreatLedger_Help_NotesTitle>
+	<ThreatLedger_Note_NoMap>沒有開啟任何地圖，沒有資料可讀取。</ThreatLedger_Note_NoMap>
+	<ThreatLedger_Note_NoAuthoritativeValue>此遊戲版本沒有回報威脅點數，因此只顯示拆解值。</ThreatLedger_Note_NoAuthoritativeValue>
+	<ThreatLedger_Note_MultiplayerSafeMode>偵測到多人模式。威脅帳本只讀取數值、絕不寫入存檔，且每次讀取後都會還原亂數產生器，因此不會造成不同步。</ThreatLedger_Note_MultiplayerSafeMode>
+	<ThreatLedger_Note_ExternalFormula>似乎有其他模組改寫了威脅公式。主數字仍是遊戲本身的數值。</ThreatLedger_Note_ExternalFormula>
+	<ThreatLedger_Note_MultiplierUnreadable>此遊戲版本至少有一個係數無法讀取，顯示為「?」並以 1 計算。</ThreatLedger_Note_MultiplierUnreadable>
+	<ThreatLedger_Note_NoWealthWatcher>無法讀取殖民地財富，拆解結果將是空的。</ThreatLedger_Note_NoWealthWatcher>
+	<ThreatLedger_Note_NoPawnCounts>無法讀取殖民者與動物，小人點數將為零。</ThreatLedger_Note_NoPawnCounts>
+	<ThreatLedger_Note_WealthMismatch>三個財富類別加總後與遊戲本身的故事敘述者財富不符。這個遊戲版本的拆解結果可能已經過時。</ThreatLedger_Note_WealthMismatch>
+	<ThreatLedger_Note_TemporaryMap>這是臨時地圖（營地、任務地點或降落點）。在這裡遊戲只把殖民者身上的裝備和你的動物算成財富，所以物品與建築卡片不適用。</ThreatLedger_Note_TemporaryMap>
+	<ThreatLedger_Note_FixedWealth>已開啟「固定財富」難度：故事敘述者財富隨時間成長，而不是依你擁有的東西計算，所以處理掉東西不會讓襲擊變小。</ThreatLedger_Note_FixedWealth>
+	<ThreatLedger_Note_WealthPlateau>故事敘述者財富已超過 1,000,000，財富曲線與每位殖民者的點數曲線在此都不再增加。處理掉部分財富，往往要降到這條線以下才會有變化——這就是許多試算項目顯示 0 的原因。</ThreatLedger_Note_WealthPlateau>
+	<ThreatLedger_Note_ClampedToMin>你的殖民地規模很小，已套用遊戲的最低襲擊規模。</ThreatLedger_Note_ClampedToMin>
+	<ThreatLedger_Note_ClampedToMax>你的殖民地已達遊戲的 10,000 點上限，再變富有也不會讓襲擊更大。</ThreatLedger_Note_ClampedToMax>
+	<ThreatLedger_Notes_None>沒有需要回報的事項。威脅帳本能讀取的資料都已成功讀取。</ThreatLedger_Notes_None>
+	<ThreatLedger_Notes_Help>這是什麼
+威脅帳本是唯讀的。它只新增一個分頁，解釋遊戲已經算好的數字。它不改變平衡、不新增物品、不修補任何遊戲方法，也不會在存檔中留下任何東西，所以能與其他模組、所有 DLC 及多人模式安全共存。
+
+怎麼使用
+點畫面下方的「威脅帳本」分頁（不需要研究或建造任何東西）。左上角的大數字就是遊戲下一場襲擊真正會使用的數值。右側的瀑布圖顯示它是怎麼組成的：財富點數和小人點數加總成基礎點數，再乘上適應係數、難度與新殖民地係數。把滑鼠移到任何一列上可以看詳細說明。下方的卡片把財富拆成物品、生物、建築三類，圖表則顯示最近幾天威脅值的變化。
+
+試算改動
+點最下方的「模擬試算」橫條。勾選物品、建築、殖民者、動物或地板，結果會立即更新，包含新的襲擊人數。在賣掉那座黃金雕像或宰掉戰犬之前先試算一下吧。不會真的改動你的殖民地。
+
+數字從哪裡來
+財富取自地圖本身的財富追蹤器。威脅值直接向故事敘述者讀取，公式中的每個係數（適應、難度、新殖民地係數、下限）也都從遊戲讀取，因此在原版遊戲中，拆解結果能完全重現遊戲的數值。只有襲擊人數是估算值。
+
+多人模式與效能
+任何數值都不會寫回遊戲，每次讀取前後也會保存並還原亂數產生器，因此面板不會造成多人連線不同步。分頁關閉時，模組只會為趨勢圖每個遊戲小時讀取一次；在設定中關閉「記錄威脅趨勢」即可完全歸零。</ThreatLedger_Notes_Help>
+	<ThreatLedger_Notes_BugReport>發現錯誤了嗎？
+請到 https://github.com/HiDanny666/ThreatLedger/issues 回報，並附上遊戲版本、模組清單與 Player.log。</ThreatLedger_Notes_BugReport>
+
+	<!-- ================================== 設定 ==================================== -->
+	<ThreatLedger_Setting_Header>外觀與行為</ThreatLedger_Setting_Header>
+	<ThreatLedger_Setting_AnimationStyle>面板動畫樣式</ThreatLedger_Setting_AnimationStyle>
+	<ThreatLedger_Setting_AnimationStyle_Tip>選 0 可完全關閉動畫。動畫純屬外觀效果，絕不會動到共用的亂數產生器。</ThreatLedger_Setting_AnimationStyle_Tip>
+	<ThreatLedger_Setting_SoundsEnabled>播放面板音效</ThreatLedger_Setting_SoundsEnabled>
+	<ThreatLedger_Setting_SoundStyle>面板音效樣式</ThreatLedger_Setting_SoundStyle>
+	<ThreatLedger_Setting_TestSound>試聽音效</ThreatLedger_Setting_TestSound>
+	<ThreatLedger_Setting_ShowWealth>顯示財富卡片</ThreatLedger_Setting_ShowWealth>
+	<ThreatLedger_Setting_ShowFormula>顯示公式瀑布圖</ThreatLedger_Setting_ShowFormula>
+	<ThreatLedger_Setting_ShowRaidEstimate>顯示襲擊人數預估</ThreatLedger_Setting_ShowRaidEstimate>
+	<ThreatLedger_Setting_ShowWhatIf>啟用模擬試算</ThreatLedger_Setting_ShowWhatIf>
+	<ThreatLedger_Setting_ShowNotes>顯示警告橫幅</ThreatLedger_Setting_ShowNotes>
+	<ThreatLedger_Setting_ShowTrend>顯示威脅趨勢圖</ThreatLedger_Setting_ShowTrend>
+	<ThreatLedger_Setting_RecordHistory>記錄威脅趨勢（每個遊戲小時讀取一次）</ThreatLedger_Setting_RecordHistory>
+	<ThreatLedger_Setting_RecordHistory_Tip>這是分頁關閉時威脅帳本唯一會做的事。讀數只存在記憶體中，絕不存檔。關閉後成本完全為零。</ThreatLedger_Setting_RecordHistory_Tip>
+	<ThreatLedger_Setting_PerformanceNote>效能：分頁關閉時，威脅帳本只會每個遊戲小時讀取一次（若有開啟趨勢記錄）。分頁開啟時，每秒最多重新讀取地圖一次，物品掃描有快取。關閉模擬試算即可移除唯一的地圖掃描。</ThreatLedger_Setting_PerformanceNote>
+	<ThreatLedger_Setting_MultiplayerNote>多人模式運作中。威脅帳本絕不寫入存檔，且每次讀取後都會還原亂數產生器，因此不會造成不同步。</ThreatLedger_Setting_MultiplayerNote>
+
+	<!-- ================================ 動畫樣式 ================================== -->
+	<ThreatLedger_Anim_None>無</ThreatLedger_Anim_None>
+	<ThreatLedger_Anim_CountUp>1 - 數字滾動遞增</ThreatLedger_Anim_CountUp>
+	<ThreatLedger_Anim_BarGrow>2 - 長條逐一長出</ThreatLedger_Anim_BarGrow>
+	<ThreatLedger_Anim_StackSweep>3 - 財富長條與趨勢線掃入</ThreatLedger_Anim_StackSweep>
+	<ThreatLedger_Anim_FormulaReveal>4 - 公式逐行顯示</ThreatLedger_Anim_FormulaReveal>
+	<ThreatLedger_Anim_Pulse>5 - 卡片淡入</ThreatLedger_Anim_Pulse>
+
+	<!-- ================================ 音效樣式 ================================== -->
+	<ThreatLedger_Sound_DataTerminal>1 - 資料終端（電子嗶聲）</ThreatLedger_Sound_DataTerminal>
+	<ThreatLedger_Sound_Hydraulics>2 - 液壓機構（低沉伺服音）</ThreatLedger_Sound_Hydraulics>
+	<ThreatLedger_Sound_PaperLedger>3 - 紙本帳簿（翻頁與輕敲聲）</ThreatLedger_Sound_PaperLedger>
+	<ThreatLedger_Sound_ThreatAlarm>4 - 威脅警報（低沉號角）</ThreatLedger_Sound_ThreatAlarm>
+	<ThreatLedger_Sound_MinimalClick>5 - 極簡點擊（幾乎聽不見）</ThreatLedger_Sound_MinimalClick>
+
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+		Adds one tab next to Work / Assign / Health.
+
+		This is the ONLY Def the mod adds that appears in the interface, and it is a pure
+		addition: nothing vanilla is overridden, renamed or removed. That is what keeps
+		Threat Ledger compatible with UI mods, and it is why the tab can simply be deleted
+		if a player does not want it.
+	-->
+	<MainButtonDef>
+		<defName>ThreatLedger</defName>
+		<label>threat ledger</label>
+		<description>See how colony wealth turns into threat points, and how big a raid would be right now.</description>
+		<tabWindowClass>ThreatLedger.UI.MainTabWindow_ThreatLedger</tabWindowClass>
+		<workerClass>ThreatLedger.UI.MainButtonWorker_ThreatLedger</workerClass>
+		<order>66</order>
+		<iconPath>UI/ThreatLedgerTab</iconPath>
+		<validWithoutMap>false</validWithoutMap>
+	</MainButtonDef>
+
+</Defs>

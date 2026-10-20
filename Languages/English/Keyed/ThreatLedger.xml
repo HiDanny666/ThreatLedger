@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ================================== header ================================== -->
+	<ThreatLedger_Title>Threat Ledger</ThreatLedger_Title>
+	<ThreatLedger_Button_Help>Help &amp; notes</ThreatLedger_Button_Help>
+	<ThreatLedger_Button_Back>Back</ThreatLedger_Button_Back>
+	<ThreatLedger_Button_Settings>Settings</ThreatLedger_Button_Settings>
+	<ThreatLedger_Banner_Tip>Click to open Help &amp; notes for the details.</ThreatLedger_Banner_Tip>
+	<ThreatLedger_NoData>No colony map is open right now.</ThreatLedger_NoData>
+
+	<!-- ============================== headline card ============================== -->
+	<ThreatLedger_Card_GameValue>The game's value</ThreatLedger_Card_GameValue>
+	<ThreatLedger_Headline_Caption>threat points a raid would use right now</ThreatLedger_Headline_Caption>
+	<ThreatLedger_Headline_DayChange>{0} points over the last day</ThreatLedger_Headline_DayChange>
+	<ThreatLedger_Status_Good>Breakdown matches the game exactly</ThreatLedger_Status_Good>
+	<ThreatLedger_Status_Gap>Small gap - see tooltip</ThreatLedger_Status_Gap>
+	<ThreatLedger_Status_Mod>Another mod changed the formula</ThreatLedger_Status_Mod>
+	<ThreatLedger_Status_Unavailable>Game value not available</ThreatLedger_Status_Unavailable>
+	<ThreatLedger_Status_Tip>Threat Ledger's own result: {0}\nThe game's value: {1}\nDifference: {2}</ThreatLedger_Status_Tip>
+	<ThreatLedger_RaidEstimate>If a raid started right now</ThreatLedger_RaidEstimate>
+	<ThreatLedger_Raid_Count>{0} raiders</ThreatLedger_Raid_Count>
+	<ThreatLedger_Raid_Tip>About {0} points per raider for this faction, averaged over the fighters it sends (weighted by how often each is picked). The band is +/-15%, because the game picks the exact mix at random. Raid strategy (sieges, sappers, drop pods) also changes the head count.</ThreatLedger_Raid_Tip>
+
+	<!-- ============================== formula card =============================== -->
+	<ThreatLedger_Card_Formula>Where the number comes from</ThreatLedger_Card_Formula>
+	<ThreatLedger_Card_Formula_Wealth>Storyteller wealth: {0}</ThreatLedger_Card_Formula_Wealth>
+	<ThreatLedger_WF_WealthPoints>Wealth points</ThreatLedger_WF_WealthPoints>
+	<ThreatLedger_WF_WealthPoints_Tip>Storyteller wealth {0} run through the game's curve: below 14,000 it is worth nothing, 400,000 gives 2,400, 700,000 gives 3,600, and from 1,000,000 it stops growing at 4,200.</ThreatLedger_WF_WealthPoints_Tip>
+	<ThreatLedger_WF_Colonists>Colonists ({0})</ThreatLedger_WF_Colonists>
+	<ThreatLedger_WF_Colonists_Tip>Each free colonist is worth {0} points at your current wealth (15 when poor, 140 at 400k, 200 at 1M).\nPersonal modifiers: injured pawns count for less (down to 35%), slaves 75% ({1} here), and with Biotech children by age ({2} here: 0 under 3, half at 13, full at 18). A pawn in cryptosleep counts 30%.</ThreatLedger_WF_Colonists_Tip>
+	<ThreatLedger_WF_Animals>Animals ({0})</ThreatLedger_WF_Animals>
+	<ThreatLedger_WF_Animals_Tip>Only tame animals that are able to learn "release" count, each worth 8% of its combat power. Downed animals do not count. Chickens and other untrainable animals add wealth only.</ThreatLedger_WF_Animals_Tip>
+	<ThreatLedger_WF_Mechs>Colony mechs ({0})</ThreatLedger_WF_Mechs>
+	<ThreatLedger_WF_Mechs_Tip>Each colony mech is worth part of its combat power: 20% when poor, 30% at 400k wealth, 40% at 1M. Downed mechs do not count.</ThreatLedger_WF_Mechs_Tip>
+	<ThreatLedger_WF_Subhumans>Subhumans ({0})</ThreatLedger_WF_Subhumans>
+	<ThreatLedger_WF_Subhumans_Tip>Ghouls and other subhumans are priced like colony mechs: 20% to 40% of their combat power depending on wealth.</ThreatLedger_WF_Subhumans_Tip>
+	<ThreatLedger_WF_Base>Base points</ThreatLedger_WF_Base>
+	<ThreatLedger_WF_Base_Tip>Wealth points plus every pawn's points. Everything below multiplies this.</ThreatLedger_WF_Base_Tip>
+	<ThreatLedger_WF_Adaptation>x Adaptation ({0} days)</ThreatLedger_WF_Adaptation>
+	<ThreatLedger_WF_Adaptation_Tip>The storyteller adapts to how well you are doing. Its factor is {0} right now. With the vanilla storytellers it starts at 0.8, climbs while nobody is lost (1.0 after about a month, 1.2 after about a year, at most about 1.47) and drops sharply when a colonist dies or is violently downed. Your difficulty lets adaptation work at {1}% strength.</ThreatLedger_WF_Adaptation_Tip>
+	<ThreatLedger_WF_Difficulty>x Difficulty</ThreatLedger_WF_Difficulty>
+	<ThreatLedger_WF_Difficulty_Tip>The difficulty's "threat scale" setting. Strive to Survive is 1.0, Losing is Fun is 2.2.</ThreatLedger_WF_Difficulty_Tip>
+	<ThreatLedger_WF_NewColony>x New colony ({0} days)</ThreatLedger_WF_NewColony>
+	<ThreatLedger_WF_NewColony_Tip>Storytellers soften threats for young colonies. With the vanilla storytellers raids are at 70% until day 10 and reach full strength on day 40.</ThreatLedger_WF_NewColony_Tip>
+	<ThreatLedger_WF_Floor>Raised to the floor ({0})</ThreatLedger_WF_Floor>
+	<ThreatLedger_WF_Ceiling>Capped at the ceiling ({0})</ThreatLedger_WF_Ceiling>
+	<ThreatLedger_WF_Clamp_Tip>The game never sends a raid below a small minimum (35 points up to a ceiling set by difficulty) and never above 10,000 points.</ThreatLedger_WF_Clamp_Tip>
+	<ThreatLedger_WF_Unexplained>x Unexplained</ThreatLedger_WF_Unexplained>
+	<ThreatLedger_WF_Unknown_Tip>This factor could not be read on this game version, so it is counted as 1. Whatever it really does appears in the "unexplained" row.</ThreatLedger_WF_Unknown_Tip>
+	<ThreatLedger_WF_Final>= Threat points</ThreatLedger_WF_Final>
+	<ThreatLedger_WF_Final_Tip>The value the game itself reports. This is always the number that counts.</ThreatLedger_WF_Final_Tip>
+
+	<ThreatLedger_Unexplained_None>The two values agree. Threat Ledger explains this raid completely.</ThreatLedger_Unexplained_None>
+	<ThreatLedger_Unexplained_Small>Every factor was read from the game, yet there is a small gap. This is usually a mod that nudges the formula a little, or a pawn whose health changed in the last second. The headline is still the game's own value.</ThreatLedger_Unexplained_Small>
+	<ThreatLedger_Unexplained_Adaptation>Threat Ledger and the game differ. Some factors could not be read on this game version (marked "?"), so their effect shows up here instead of being guessed at.</ThreatLedger_Unexplained_Adaptation>
+	<ThreatLedger_Unexplained_LikelyMod>These two values are far apart. In vanilla this cannot happen, so another mod has probably replaced the threat formula. The panel is still safe to use: the headline number is the game's own, and the what-if simulator follows whichever formula is really in play.</ThreatLedger_Unexplained_LikelyMod>
+	<ThreatLedger_Unexplained_Unavailable>The game value could not be read right now, so there is nothing to compare against.</ThreatLedger_Unexplained_Unavailable>
+
+	<!-- =============================== wealth cards =============================== -->
+	<ThreatLedger_Card_Wealth>Wealth</ThreatLedger_Card_Wealth>
+	<ThreatLedger_Cat_Items>Items</ThreatLedger_Cat_Items>
+	<ThreatLedger_Cat_Creatures>Creatures</ThreatLedger_Cat_Creatures>
+	<ThreatLedger_Cat_Buildings>Buildings</ThreatLedger_Cat_Buildings>
+	<ThreatLedger_Cat_Items_Note>Everything not hidden by fog, inventories included.</ThreatLedger_Cat_Items_Note>
+	<ThreatLedger_Cat_Creatures_Note>Market value of your colonists and animals.</ThreatLedger_Cat_Creatures_Note>
+	<ThreatLedger_Cat_Buildings_Note>Counted at half value, floors included.</ThreatLedger_Cat_Buildings_Note>
+	<ThreatLedger_Cat_Plateau_Note>Past the 1M plateau: worth 0 points right now.</ThreatLedger_Cat_Plateau_Note>
+	<ThreatLedger_Card_Points>{0} pts</ThreatLedger_Card_Points>
+	<ThreatLedger_Card_Value>Value {0}  -  counts as {1}</ThreatLedger_Card_Value>
+	<ThreatLedger_Card_Wealth_Tip>Points shown are "what you would lose if this whole category vanished". Because the curves are not straight lines the three numbers do not add up exactly to the total. That is expected, and it is exactly what would happen if you really got rid of it.</ThreatLedger_Card_Wealth_Tip>
+
+	<!-- ================================ trend card ================================ -->
+	<ThreatLedger_Card_Trend>Threat trend</ThreatLedger_Card_Trend>
+	<ThreatLedger_Trend_Collecting>Recording... one sample every in-game hour. The chart appears after the second sample.</ThreatLedger_Trend_Collecting>
+	<ThreatLedger_Trend_Off>Trend recording is switched off in the mod settings.</ThreatLedger_Trend_Off>
+	<ThreatLedger_Trend_DaysAgo>{0} days ago</ThreatLedger_Trend_DaysAgo>
+	<ThreatLedger_Trend_Now>now</ThreatLedger_Trend_Now>
+	<ThreatLedger_Trend_Day>Last day: {0}</ThreatLedger_Trend_Day>
+	<ThreatLedger_Trend_Week>Last 7 days: {0}</ThreatLedger_Trend_Week>
+	<ThreatLedger_Trend_Range>Range: {0} to {1}</ThreatLedger_Trend_Range>
+	<ThreatLedger_Trend_Samples>{0} hourly samples</ThreatLedger_Trend_Samples>
+	<ThreatLedger_Trend_Tip>The game's threat points, sampled once per in-game hour for up to 20 days. Samples are kept in memory only and are never written to your save, so the chart starts again after you load a game.</ThreatLedger_Trend_Tip>
+
+	<!-- ================================= drawer =================================== -->
+	<ThreatLedger_Drawer_Title>What-if simulator</ThreatLedger_Drawer_Title>
+	<ThreatLedger_Drawer_Hint>Click to test what getting rid of something would do to the next raid.</ThreatLedger_Drawer_Hint>
+	<ThreatLedger_Drawer_Summary>{0} ticked:  {1} -> {2}  ({3}, {4})</ThreatLedger_Drawer_Summary>
+	<ThreatLedger_WhatIf_Header>Tick anything you are thinking of getting rid of</ThreatLedger_WhatIf_Header>
+	<ThreatLedger_Filter_All>All</ThreatLedger_Filter_All>
+	<ThreatLedger_Filter_Items>Items</ThreatLedger_Filter_Items>
+	<ThreatLedger_Filter_Buildings>Buildings</ThreatLedger_Filter_Buildings>
+	<ThreatLedger_Filter_Pawns>Pawns</ThreatLedger_Filter_Pawns>
+	<ThreatLedger_WhatIf_Search>Search...</ThreatLedger_WhatIf_Search>
+	<ThreatLedger_WhatIf_Empty>Nothing matching was found on this map.</ThreatLedger_WhatIf_Empty>
+	<ThreatLedger_WhatIf_Refresh>Rescan map</ThreatLedger_WhatIf_Refresh>
+	<ThreatLedger_WhatIf_Clear>Clear ticks</ThreatLedger_WhatIf_Clear>
+	<ThreatLedger_WhatIf_Result>Result</ThreatLedger_WhatIf_Result>
+	<ThreatLedger_WhatIf_Now>Now</ThreatLedger_WhatIf_Now>
+	<ThreatLedger_WhatIf_After>After</ThreatLedger_WhatIf_After>
+	<ThreatLedger_WhatIf_RemovedWealth>Storyteller wealth removed: {0}</ThreatLedger_WhatIf_RemovedWealth>
+	<ThreatLedger_WhatIf_RemainingWealth>Storyteller wealth remaining: {0}</ThreatLedger_WhatIf_RemainingWealth>
+	<ThreatLedger_WhatIf_RemovedPawns>Pawns removed: {0}</ThreatLedger_WhatIf_RemovedPawns>
+	<ThreatLedger_WhatIf_AfterRaid>Raid size, now -> after</ThreatLedger_WhatIf_AfterRaid>
+	<ThreatLedger_WhatIf_Clamped>You have ticked more than the whole colony is worth, so the result is clamped to the lowest possible value.</ThreatLedger_WhatIf_Clamped>
+	<ThreatLedger_WhatIf_Explain>Each row shows its market value and how many points the next raid would change by if you removed only that. Tick several to combine them. Nothing in your colony is changed.</ThreatLedger_WhatIf_Explain>
+	<ThreatLedger_Row_Tip>Market value: {0}\nCounts as storyteller wealth: {1}\nRemoving only this: {2} points</ThreatLedger_Row_Tip>
+
+	<ThreatLedger_Entry_AllItems>All items on the map</ThreatLedger_Entry_AllItems>
+	<ThreatLedger_Entry_AllBuildings>All buildings on the map</ThreatLedger_Entry_AllBuildings>
+	<ThreatLedger_Entry_Floors>All floors</ThreatLedger_Entry_Floors>
+	<ThreatLedger_Entry_Floors_Note>Floors count as buildings, at half value. Expensive floors (gold tiles, fine carpet) add up on a big base, but ordinary flooring barely moves raids.</ThreatLedger_Entry_Floors_Note>
+	<ThreatLedger_Entry_Prisoners>Prisoners</ThreatLedger_Entry_Prisoners>
+	<ThreatLedger_Entry_Prisoners_Note>Prisoners do not belong to your faction, so they add neither wealth nor pawn points. Selling or releasing them will not change raid size.</ThreatLedger_Entry_Prisoners_Note>
+	<ThreatLedger_Entry_SlaveTag>(slave)</ThreatLedger_Entry_SlaveTag>
+	<ThreatLedger_Entry_ChildTag>(child)</ThreatLedger_Entry_ChildTag>
+	<ThreatLedger_Entry_Colonist_Note>Removing a colonist takes away their market value and the points they are worth as a pawn. Their gear stays in the items count unless you tick it too.</ThreatLedger_Entry_Colonist_Note>
+	<ThreatLedger_Entry_Slave_Note>Slaves count at 75%, both as wealth and as pawn points.</ThreatLedger_Entry_Slave_Note>
+	<ThreatLedger_Entry_Child_Note>With Biotech, children count by age: nothing under 3, half at 13, full at 18.</ThreatLedger_Entry_Child_Note>
+	<ThreatLedger_Entry_Animal_Note>These animals can learn "release", so each one adds 8% of its combat power as pawn points, on top of its market value.</ThreatLedger_Entry_Animal_Note>
+	<ThreatLedger_Entry_Mech_Note>Colony mechs add a wealth-scaled share of their combat power as pawn points, on top of their market value.</ThreatLedger_Entry_Mech_Note>
+	<ThreatLedger_Entry_Subhuman_Note>Subhumans add a wealth-scaled share of their combat power as pawn points, on top of their market value.</ThreatLedger_Entry_Subhuman_Note>
+	<ThreatLedger_Entry_NoPoints_Note>These pawns add market value only. They are not worth any pawn points (untrainable or downed animals, downed mechs).</ThreatLedger_Entry_NoPoints_Note>
+
+	<!-- ================================ factions ================================== -->
+	<ThreatLedger_Faction_Pirates>Pirates</ThreatLedger_Faction_Pirates>
+	<ThreatLedger_Faction_Tribals>Tribals</ThreatLedger_Faction_Tribals>
+	<ThreatLedger_Faction_Mechanoids>Mechanoids</ThreatLedger_Faction_Mechanoids>
+
+	<!-- ================================== notes =================================== -->
+	<ThreatLedger_Help_NotesTitle>Notes about this colony</ThreatLedger_Help_NotesTitle>
+	<ThreatLedger_Note_NoMap>No map is open, so there is nothing to read.</ThreatLedger_Note_NoMap>
+	<ThreatLedger_Note_NoAuthoritativeValue>This game version did not report a threat point value, so only the breakdown is shown.</ThreatLedger_Note_NoAuthoritativeValue>
+	<ThreatLedger_Note_MultiplayerSafeMode>Multiplayer detected. Threat Ledger only reads values, never writes to the save and restores the random generator after every read, so it cannot cause a desync.</ThreatLedger_Note_MultiplayerSafeMode>
+	<ThreatLedger_Note_ExternalFormula>Another mod appears to have changed the threat formula. The headline number is still the game's own value.</ThreatLedger_Note_ExternalFormula>
+	<ThreatLedger_Note_MultiplierUnreadable>At least one multiplier could not be read on this game version. It is shown as "?" and counted as 1.</ThreatLedger_Note_MultiplierUnreadable>
+	<ThreatLedger_Note_NoWealthWatcher>Colony wealth could not be read. The breakdown will be empty.</ThreatLedger_Note_NoWealthWatcher>
+	<ThreatLedger_Note_NoPawnCounts>Colonists and animals could not be read. Pawn points will be zero.</ThreatLedger_Note_NoPawnCounts>
+	<ThreatLedger_Note_WealthMismatch>The three wealth categories do not add up to the game's own storyteller wealth figure. The breakdown may be out of date for this game version.</ThreatLedger_Note_WealthMismatch>
+	<ThreatLedger_Note_TemporaryMap>This is a temporary map (a camp, quest site or landing spot). Here the game only counts your colonists' gear and your animals as wealth, so the item and building cards do not apply.</ThreatLedger_Note_TemporaryMap>
+	<ThreatLedger_Note_FixedWealth>Fixed-wealth difficulty is on: storyteller wealth grows with time instead of with what you own, so getting rid of things will not shrink raids.</ThreatLedger_Note_FixedWealth>
+	<ThreatLedger_Note_WealthPlateau>Storyteller wealth is above 1,000,000, where both the wealth curve and the per-colonist curve stop growing. Removing some wealth will often change nothing until you drop below that line - this is why many what-if rows show 0.</ThreatLedger_Note_WealthPlateau>
+	<ThreatLedger_Note_ClampedToMin>Your colony is small enough that the game's minimum raid size applies.</ThreatLedger_Note_ClampedToMin>
+	<ThreatLedger_Note_ClampedToMax>Your colony has reached the game's 10,000 point ceiling. Getting richer cannot make raids any bigger.</ThreatLedger_Note_ClampedToMax>
+	<ThreatLedger_Notes_None>Nothing to report. Everything Threat Ledger could read was read successfully.</ThreatLedger_Notes_None>
+	<ThreatLedger_Notes_Help>WHAT THIS IS
+Threat Ledger is read-only. It adds one tab and explains a number the game already calculated. It does not change balance, add items, patch any game method or leave anything in your save, which is why it is safe next to other mods, with every DLC, and in multiplayer.
+
+HOW TO USE IT
+Open the "threat ledger" tab at the bottom of the screen (no research or building needed). The big number at the top left is what the game will really use for the next raid. The waterfall on the right shows how it is built: wealth points and pawn points add up to base points, then adaptation, difficulty and the new-colony factor multiply it. Hover over any row for details. The cards below split your wealth into items, creatures and buildings, and the chart shows how your threat has moved over recent days.
+
+TESTING A CHANGE
+Click the "What-if simulator" bar at the bottom. Tick items, buildings, colonists, animals or the floors and the result updates instantly, including the new raid size. Use it before selling that golden statue or butchering a war dog. Nothing in your colony is changed.
+
+WHERE THE NUMBERS COME FROM
+Wealth comes from the map's own wealth tracker. The threat value is read straight from the storyteller, and every factor of the formula (adaptation, difficulty, new-colony factor, minimum) is read from the game too, so in vanilla the breakdown reproduces the game exactly. Only the raid head count is an estimate.
+
+MULTIPLAYER AND PERFORMANCE
+No value is ever written back into the game, and the random number generator is saved and restored around every read, so the panel cannot desync a session. With the tab closed the mod only takes one reading per in-game hour for the trend chart; switch "record threat trend" off in the settings to make that zero.</ThreatLedger_Notes_Help>
+	<ThreatLedger_Notes_BugReport>FOUND A BUG?
+Report it at https://github.com/HiDanny666/ThreatLedger/issues - please include your game version, your mod list and Player.log.</ThreatLedger_Notes_BugReport>
+
+	<!-- ================================ settings ================================== -->
+	<ThreatLedger_Setting_Header>Appearance and behaviour</ThreatLedger_Setting_Header>
+	<ThreatLedger_Setting_AnimationStyle>Panel animation style</ThreatLedger_Setting_AnimationStyle>
+	<ThreatLedger_Setting_AnimationStyle_Tip>Pick 0 to turn animation off entirely. Animation is cosmetic only and never touches the shared random number generator.</ThreatLedger_Setting_AnimationStyle_Tip>
+	<ThreatLedger_Setting_SoundsEnabled>Play panel sounds</ThreatLedger_Setting_SoundsEnabled>
+	<ThreatLedger_Setting_SoundStyle>Panel sound style</ThreatLedger_Setting_SoundStyle>
+	<ThreatLedger_Setting_TestSound>Test sound</ThreatLedger_Setting_TestSound>
+	<ThreatLedger_Setting_ShowWealth>Show the wealth cards</ThreatLedger_Setting_ShowWealth>
+	<ThreatLedger_Setting_ShowFormula>Show the formula waterfall</ThreatLedger_Setting_ShowFormula>
+	<ThreatLedger_Setting_ShowRaidEstimate>Show the raid size estimate</ThreatLedger_Setting_ShowRaidEstimate>
+	<ThreatLedger_Setting_ShowWhatIf>Enable the what-if simulator</ThreatLedger_Setting_ShowWhatIf>
+	<ThreatLedger_Setting_ShowNotes>Show warning banners</ThreatLedger_Setting_ShowNotes>
+	<ThreatLedger_Setting_ShowTrend>Show the threat trend chart</ThreatLedger_Setting_ShowTrend>
+	<ThreatLedger_Setting_RecordHistory>Record threat trend (one reading per in-game hour)</ThreatLedger_Setting_RecordHistory>
+	<ThreatLedger_Setting_RecordHistory_Tip>The only thing Threat Ledger does while its tab is closed. Readings stay in memory and are never saved. Turn this off for a strict zero cost.</ThreatLedger_Setting_RecordHistory_Tip>
+	<ThreatLedger_Setting_PerformanceNote>Performance: with the tab closed Threat Ledger only takes one reading per in-game hour (if trend recording is on). With it open the map is re-read at most once per second and the item scan is cached. Turning off the what-if simulator removes the only scan of the map.</ThreatLedger_Setting_PerformanceNote>
+	<ThreatLedger_Setting_MultiplayerNote>Multiplayer is active. Threat Ledger never writes to the save and restores the random generator after every read, so it cannot cause a desync.</ThreatLedger_Setting_MultiplayerNote>
+
+	<!-- ============================ animation style names ========================= -->
+	<ThreatLedger_Anim_None>None</ThreatLedger_Anim_None>
+	<ThreatLedger_Anim_CountUp>1 - Numbers roll up</ThreatLedger_Anim_CountUp>
+	<ThreatLedger_Anim_BarGrow>2 - Bars grow in</ThreatLedger_Anim_BarGrow>
+	<ThreatLedger_Anim_StackSweep>3 - Wealth bars and trend line sweep in</ThreatLedger_Anim_StackSweep>
+	<ThreatLedger_Anim_FormulaReveal>4 - Formula reveals line by line</ThreatLedger_Anim_FormulaReveal>
+	<ThreatLedger_Anim_Pulse>5 - Cards fade in</ThreatLedger_Anim_Pulse>
+
+	<!-- ============================== sound style names =========================== -->
+	<ThreatLedger_Sound_DataTerminal>1 - Data terminal (electronic blips)</ThreatLedger_Sound_DataTerminal>
+	<ThreatLedger_Sound_Hydraulics>2 - Hydraulics (low servo sweeps)</ThreatLedger_Sound_Hydraulics>
+	<ThreatLedger_Sound_PaperLedger>3 - Paper ledger (page rustle and ticks)</ThreatLedger_Sound_PaperLedger>
+	<ThreatLedger_Sound_ThreatAlarm>4 - Threat alarm (a low horn)</ThreatLedger_Sound_ThreatAlarm>
+	<ThreatLedger_Sound_MinimalClick>5 - Minimal click (barely audible)</ThreatLedger_Sound_MinimalClick>
+
+</LanguageData>

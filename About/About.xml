@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Threat Ledger</name>
+	<author>danny</author>
+	<packageId>danny.threatledger</packageId>
+	<modVersion>0.2.0</modVersion>
+	<url>https://github.com/HiDanny666/ThreatLedger</url>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+
+	<description>Threat Ledger shows you exactly why your colony is getting the raids it gets.
+
+RimWorld decides raid size with a hidden formula and never tells you any of it. Threat Ledger reads every part of it from the game and lays it out on one dashboard:
+
+[b]The game's value[/b] - the threat points the next raid would really use, with a status badge that tells you whether the breakdown matches the game exactly.
+
+[b]Formula waterfall[/b] - wealth points, colonists, animals and mechs add up to base points; then adaptation, difficulty and the new-colony factor multiply it. Hover any row for the rule behind it.
+
+[b]Wealth cards[/b] - items, creatures and buildings (at half value): what each is worth and how many points it is responsible for.
+
+[b]Threat trend[/b] - a chart of your threat over the last days, sampled every in-game hour (memory only, never saved).
+
+[b]Raid size estimate[/b] - roughly how many raiders each hostile faction would send right now.
+
+[b]What-if simulator[/b] - slide up the drawer and tick items, buildings, floors, colonists, slaves, animals or mechs to see the new threat and raid size instantly. Finally answer "should I keep that golden statue?" (Prisoners are listed too - they count for nothing.)
+
+[b]Read-only by design[/b] - zero Harmony patches, zero changes to game state, nothing in your save, and the random number generator is restored after every read. Safe with other mods, with every DLC, and in multiplayer.
+
+[u]How to get it in game:[/u] nothing to research, build or craft. A "threat ledger" tab appears at the bottom of the screen, next to Work / Assign / Health, as soon as you have a colony.
+
+[u]How to use it:[/u] read the big number first - that is what the game will use. Follow the waterfall down to see which layer pushes it up. Before selling or demolishing something valuable, test it in the what-if drawer. The Settings button at the top right opens the mod settings (5 animation styles, 5 sound styles, which sections to show, trend recording on/off).
+
+[u]Languages:[/u] English, 繁體中文, 简体中文.
+
+[u]Bug reports:[/u] https://github.com/HiDanny666/ThreatLedger/issues (please include your game version, mod list and Player.log).
+
+=== 繁體中文 ===
+「威脅帳本」讓你看清楚：你的殖民地為什麼會遭遇這種規模的襲擊。
+
+RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。威脅帳本把公式的每一部分都從遊戲讀出來，整理在一個儀表板上：
+
+[b]遊戲實際值[/b] - 下一場襲擊真正會使用的威脅點數，並以狀態標籤告訴你拆解結果是否與遊戲完全吻合。
+
+[b]公式瀑布圖[/b] - 財富點數、殖民者、動物、機械體加總成基礎點數，再乘上適應係數、難度與新殖民地係數。把滑鼠移到任一列即可看到背後的規則。
+
+[b]財富卡片[/b] - 物品、生物、建築（以半價計算）各值多少，以及各自造成多少威脅點數。
+
+[b]威脅趨勢[/b] - 最近幾天威脅值的變化圖，每個遊戲小時取樣一次（只存在記憶體，絕不寫入存檔）。
+
+[b]襲擊人數預估[/b] - 如果現在發生襲擊，各敵對派系大約會來多少人。
+
+[b]模擬試算[/b] - 拉起下方抽屜，勾選物品、建築、地板、殖民者、奴隸、動物或機械體，立即看到新的威脅值與襲擊人數。終於能回答「那座黃金雕像到底該不該留？」（俘虜也會列出——它們完全不計入。）
+
+[b]唯讀設計[/b] - 零 Harmony patch、不改動遊戲狀態、不在存檔留下任何東西，每次讀取後都會還原亂數產生器。與其他模組、所有 DLC 及多人模式相容。
+
+[u]如何取得：[/u] 不需要研究、建造或製作任何東西。只要有殖民地，畫面下方就會出現「威脅帳本」分頁，就在工作／分配／健康旁邊。
+
+[u]怎麼使用：[/u] 先看大數字——那是遊戲真正會用的值。沿著瀑布圖往下看，找出是哪一層把威脅推高。要賣掉或拆除貴重東西之前，先在模擬試算抽屜裡試算。右上角「設定」可調整 5 種動畫、5 種音效、要顯示哪些區塊，以及是否記錄趨勢。
+
+[u]語言支援：[/u] English、繁體中文、简体中文。
+
+[u]錯誤回報：[/u] https://github.com/HiDanny666/ThreatLedger/issues （請附上遊戲版本、模組清單與 Player.log）。
+</description>
+</ModMetaData>

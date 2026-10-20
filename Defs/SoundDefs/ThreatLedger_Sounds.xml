@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+		Fifteen UI sounds: five distinct styles, each with an open / select / warn event.
+
+		Every file is synthesised by Tools/GenerateAssets.ps1, so there is no third party
+		audio of any kind in this mod and nothing here needs a licence review.
+
+		Styles:
+		  DataTerminal  electronic blips, console feel
+		  Hydraulics    low servo sweeps, industrial feel
+		  PaperLedger   page rustle and soft ticks, accountant's desk
+		  ThreatAlarm   a low horn, dread rather than beeps
+		  MinimalClick  barely audible, for players who dislike UI sound
+
+		Structure notes, both learned the hard way from the game's own log:
+
+		  * <onCamera>True</onCamera> is required on every subsound. Without it the game
+		    reports "Sounds with non-on-camera subsounds should use MapOnly context",
+		    because a positional sound cannot be played from the camera.
+
+		  * Volume is <volumeRange>N~N</volumeRange>, not <volume>. The game's values run
+		    from about 9 (very quiet) to 30 (a sting). The numbers below follow that scale
+		    rather than a 0-1 scale.
+
+		Only one style is active at a time; the player picks it in mod settings.
+	-->
+
+	<!-- ============================ 1. DataTerminal ============================ -->
+	<SoundDef>
+		<defName>ThreatLedger_DataTerminal_Open</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/DataTerminal_Open</clipPath>
+					</li>
+				</grains>
+				<volumeRange>22~22</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_DataTerminal_Select</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/DataTerminal_Select</clipPath>
+					</li>
+				</grains>
+				<volumeRange>16~16</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_DataTerminal_Warn</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/DataTerminal_Warn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>24~24</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ============================= 2. Hydraulics ============================= -->
+	<SoundDef>
+		<defName>ThreatLedger_Hydraulics_Open</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/Hydraulics_Open</clipPath>
+					</li>
+				</grains>
+				<volumeRange>24~24</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_Hydraulics_Select</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/Hydraulics_Select</clipPath>
+					</li>
+				</grains>
+				<volumeRange>18~18</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_Hydraulics_Warn</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/Hydraulics_Warn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>26~26</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ============================ 3. PaperLedger ============================= -->
+	<SoundDef>
+		<defName>ThreatLedger_PaperLedger_Open</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/PaperLedger_Open</clipPath>
+					</li>
+				</grains>
+				<volumeRange>24~24</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_PaperLedger_Select</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/PaperLedger_Select</clipPath>
+					</li>
+				</grains>
+				<volumeRange>18~18</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_PaperLedger_Warn</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/PaperLedger_Warn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>24~24</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- ============================ 4. ThreatAlarm ============================= -->
+	<SoundDef>
+		<defName>ThreatLedger_ThreatAlarm_Open</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/ThreatAlarm_Open</clipPath>
+					</li>
+				</grains>
+				<volumeRange>24~24</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_ThreatAlarm_Select</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/ThreatAlarm_Select</clipPath>
+					</li>
+				</grains>
+				<volumeRange>18~18</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_ThreatAlarm_Warn</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/ThreatAlarm_Warn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>26~26</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<!-- =========================== 5. MinimalClick ============================= -->
+	<SoundDef>
+		<defName>ThreatLedger_MinimalClick_Open</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/MinimalClick_Open</clipPath>
+					</li>
+				</grains>
+				<volumeRange>14~14</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_MinimalClick_Select</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/MinimalClick_Select</clipPath>
+					</li>
+				</grains>
+				<volumeRange>12~12</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>ThreatLedger_MinimalClick_Warn</defName>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>ThreatLedger/MinimalClick_Warn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>14~14</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

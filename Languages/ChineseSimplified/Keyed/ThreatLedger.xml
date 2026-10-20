@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<!-- ================================== 标题栏 ================================== -->
+	<ThreatLedger_Title>威胁账本</ThreatLedger_Title>
+	<ThreatLedger_Button_Help>说明与提示</ThreatLedger_Button_Help>
+	<ThreatLedger_Button_Back>返回</ThreatLedger_Button_Back>
+	<ThreatLedger_Button_Settings>设置</ThreatLedger_Button_Settings>
+	<ThreatLedger_Banner_Tip>点击打开“说明与提示”查看详情。</ThreatLedger_Banner_Tip>
+	<ThreatLedger_NoData>当前没有打开任何殖民地地图。</ThreatLedger_NoData>
+
+	<!-- ================================ 主数字卡片 ================================ -->
+	<ThreatLedger_Card_GameValue>游戏实际值</ThreatLedger_Card_GameValue>
+	<ThreatLedger_Headline_Caption>现在发生袭击时会采用的威胁点数</ThreatLedger_Headline_Caption>
+	<ThreatLedger_Headline_DayChange>过去一天变化 {0} 点</ThreatLedger_Headline_DayChange>
+	<ThreatLedger_Status_Good>拆解结果与游戏完全吻合</ThreatLedger_Status_Good>
+	<ThreatLedger_Status_Gap>有小幅差距（鼠标悬停查看）</ThreatLedger_Status_Gap>
+	<ThreatLedger_Status_Mod>其他模组改写了公式</ThreatLedger_Status_Mod>
+	<ThreatLedger_Status_Unavailable>无法获取游戏实际值</ThreatLedger_Status_Unavailable>
+	<ThreatLedger_Status_Tip>本模组计算结果：{0}\n游戏实际值：{1}\n差距：{2}</ThreatLedger_Status_Tip>
+	<ThreatLedger_RaidEstimate>如果现在发生袭击</ThreatLedger_RaidEstimate>
+	<ThreatLedger_Raid_Count>{0} 人</ThreatLedger_Raid_Count>
+	<ThreatLedger_Raid_Tip>该派系每名袭击者平均约 {0} 点（按各兵种被选中的概率加权平均）。范围为 ±15%，因为游戏会随机决定实际兵种组成。袭击策略（围攻、挖地道、空投）也会改变人数。</ThreatLedger_Raid_Tip>
+
+	<!-- ================================ 公式卡片 ================================== -->
+	<ThreatLedger_Card_Formula>数字是怎么来的</ThreatLedger_Card_Formula>
+	<ThreatLedger_Card_Formula_Wealth>故事叙述者财富：{0}</ThreatLedger_Card_Formula_Wealth>
+	<ThreatLedger_WF_WealthPoints>财富点数</ThreatLedger_WF_WealthPoints>
+	<ThreatLedger_WF_WealthPoints_Tip>故事叙述者财富 {0} 套用游戏曲线换算：14,000 以下为 0 点，400,000 为 2,400 点，700,000 为 3,600 点，1,000,000 以上固定为 4,200 点不再增加。</ThreatLedger_WF_WealthPoints_Tip>
+	<ThreatLedger_WF_Colonists>殖民者（{0}）</ThreatLedger_WF_Colonists>
+	<ThreatLedger_WF_Colonists_Tip>以你目前的财富，每位自由殖民者值 {0} 点（贫穷时 15 点，400k 时 140 点，1M 时 200 点）。\n个人修正：受伤会降低点数（最低剩 35%），奴隶算 75%（当前 {1} 位），有 Biotech 时儿童按年龄计算（当前 {2} 位：3 岁以下为 0，13 岁一半，18 岁全额）。在低温休眠舱中的小人只算 30%。</ThreatLedger_WF_Colonists_Tip>
+	<ThreatLedger_WF_Animals>动物（{0}）</ThreatLedger_WF_Animals>
+	<ThreatLedger_WF_Animals_Tip>只有能学会“出击”的驯服动物才计入，每只值其战斗力的 8%。倒地的动物不计。鸡之类无法训练的动物只会增加财富。</ThreatLedger_WF_Animals_Tip>
+	<ThreatLedger_WF_Mechs>殖民地机械体（{0}）</ThreatLedger_WF_Mechs>
+	<ThreatLedger_WF_Mechs_Tip>每台殖民地机械体值其战斗力的一部分：贫穷时 20%，财富 400k 时 30%，1M 时 40%。倒地的机械体不计。</ThreatLedger_WF_Mechs_Tip>
+	<ThreatLedger_WF_Subhumans>亚人（{0}）</ThreatLedger_WF_Subhumans>
+	<ThreatLedger_WF_Subhumans_Tip>食尸鬼等亚人的计价方式与殖民地机械体相同：按财富计入其战斗力的 20% 到 40%。</ThreatLedger_WF_Subhumans_Tip>
+	<ThreatLedger_WF_Base>基础点数</ThreatLedger_WF_Base>
+	<ThreatLedger_WF_Base_Tip>财富点数加上所有小人的点数。下面的每一层都是乘在这个数字上。</ThreatLedger_WF_Base_Tip>
+	<ThreatLedger_WF_Adaptation>× 适应性（{0} 天）</ThreatLedger_WF_Adaptation>
+	<ThreatLedger_WF_Adaptation_Tip>故事叙述者会根据你的表现调整难度，当前系数为 {0}。原版故事叙述者从 0.8 起算，没有人员损失时会慢慢上升（约一个月到 1.0，约一年到 1.2，最高约 1.47），殖民者死亡或被暴力击倒时会大幅下降。你的难度设置让适应性影响以 {1}% 的强度生效。</ThreatLedger_WF_Adaptation_Tip>
+	<ThreatLedger_WF_Difficulty>× 难度</ThreatLedger_WF_Difficulty>
+	<ThreatLedger_WF_Difficulty_Tip>难度设置中的“威胁规模”。“荒野求生”为 1.0，“冷酷无情”为 2.2。</ThreatLedger_WF_Difficulty_Tip>
+	<ThreatLedger_WF_NewColony>× 新殖民地（第 {0} 天）</ThreatLedger_WF_NewColony>
+	<ThreatLedger_WF_NewColony_Tip>故事叙述者会对刚建立的殖民地手下留情。原版故事叙述者在第 10 天前袭击只有 70% 强度，到第 40 天才恢复全额。</ThreatLedger_WF_NewColony_Tip>
+	<ThreatLedger_WF_Floor>提高到下限（{0}）</ThreatLedger_WF_Floor>
+	<ThreatLedger_WF_Ceiling>压到上限（{0}）</ThreatLedger_WF_Ceiling>
+	<ThreatLedger_WF_Clamp_Tip>游戏发起的袭击不会低于一个小下限（35 点到难度设置的上限之间），也不会超过 10,000 点。</ThreatLedger_WF_Clamp_Tip>
+	<ThreatLedger_WF_Unexplained>× 无法解释的部分</ThreatLedger_WF_Unexplained>
+	<ThreatLedger_WF_Unknown_Tip>此游戏版本无法读取这个系数，因此以 1 计算。它的实际效果会显示在“无法解释的部分”那一行。</ThreatLedger_WF_Unknown_Tip>
+	<ThreatLedger_WF_Final>= 威胁点数</ThreatLedger_WF_Final>
+	<ThreatLedger_WF_Final_Tip>游戏本身报告的数值。永远以这个数字为准。</ThreatLedger_WF_Final_Tip>
+
+	<ThreatLedger_Unexplained_None>两个数值一致。威胁账本完整解释了这场袭击的规模。</ThreatLedger_Unexplained_None>
+	<ThreatLedger_Unexplained_Small>所有系数都已从游戏读取，但仍有小幅差距。通常是某个模组微调了公式，或是某位小人的健康状态刚好在这一秒改变。主数字仍是游戏本身的数值。</ThreatLedger_Unexplained_Small>
+	<ThreatLedger_Unexplained_Adaptation>威胁账本与游戏的数值有差距。此游戏版本有部分系数无法读取（标示为“?”），它们的效果会显示在这里，而不是靠猜测。</ThreatLedger_Unexplained_Adaptation>
+	<ThreatLedger_Unexplained_LikelyMod>两个数值差距很大。原版游戏不可能出现这种情况，所以很可能有其他模组取代了威胁公式。面板仍可放心使用：主数字是游戏本身的数值，模拟试算也会跟随实际生效的公式。</ThreatLedger_Unexplained_LikelyMod>
+	<ThreatLedger_Unexplained_Unavailable>当前无法读取游戏数值，因此没有可比对的对象。</ThreatLedger_Unexplained_Unavailable>
+
+	<!-- ================================ 财富卡片 ================================== -->
+	<ThreatLedger_Card_Wealth>财富</ThreatLedger_Card_Wealth>
+	<ThreatLedger_Cat_Items>物品</ThreatLedger_Cat_Items>
+	<ThreatLedger_Cat_Creatures>生物</ThreatLedger_Cat_Creatures>
+	<ThreatLedger_Cat_Buildings>建筑</ThreatLedger_Cat_Buildings>
+	<ThreatLedger_Cat_Items_Note>所有未被战争迷雾遮蔽的物品，含背包内物品。</ThreatLedger_Cat_Items_Note>
+	<ThreatLedger_Cat_Creatures_Note>殖民者与动物本身的市值。</ThreatLedger_Cat_Creatures_Note>
+	<ThreatLedger_Cat_Buildings_Note>按半价计算，包含地板。</ThreatLedger_Cat_Buildings_Note>
+	<ThreatLedger_Cat_Plateau_Note>已超过 1M 上限：目前不增加点数。</ThreatLedger_Cat_Plateau_Note>
+	<ThreatLedger_Card_Points>{0} 点</ThreatLedger_Card_Points>
+	<ThreatLedger_Card_Value>市值 {0}　计入 {1}</ThreatLedger_Card_Value>
+	<ThreatLedger_Card_Wealth_Tip>显示的点数代表“如果整个类别消失，你会少掉多少点”。由于曲线不是直线，三个数字加起来不会刚好等于总数。这是正常的，而且正是你真的处理掉它们时会发生的结果。</ThreatLedger_Card_Wealth_Tip>
+
+	<!-- ================================ 趋势卡片 ================================== -->
+	<ThreatLedger_Card_Trend>威胁趋势</ThreatLedger_Card_Trend>
+	<ThreatLedger_Trend_Collecting>记录中……每个游戏小时采样一次，取得第二个样本后就会显示图表。</ThreatLedger_Trend_Collecting>
+	<ThreatLedger_Trend_Off>已在模组设置中关闭趋势记录。</ThreatLedger_Trend_Off>
+	<ThreatLedger_Trend_DaysAgo>{0} 天前</ThreatLedger_Trend_DaysAgo>
+	<ThreatLedger_Trend_Now>现在</ThreatLedger_Trend_Now>
+	<ThreatLedger_Trend_Day>近一天：{0}</ThreatLedger_Trend_Day>
+	<ThreatLedger_Trend_Week>近 7 天：{0}</ThreatLedger_Trend_Week>
+	<ThreatLedger_Trend_Range>范围：{0} 至 {1}</ThreatLedger_Trend_Range>
+	<ThreatLedger_Trend_Samples>共 {0} 个每小时样本</ThreatLedger_Trend_Samples>
+	<ThreatLedger_Trend_Tip>游戏的威胁点数，每个游戏小时采样一次，最多保留 20 天。样本只存在内存中，绝不会写入存档，因此读档后图表会重新开始。</ThreatLedger_Trend_Tip>
+
+	<!-- ================================ 模拟抽屉 ================================== -->
+	<ThreatLedger_Drawer_Title>模拟试算</ThreatLedger_Drawer_Title>
+	<ThreatLedger_Drawer_Hint>点击这里，试算处理掉某样东西后下一场袭击会变成怎样。</ThreatLedger_Drawer_Hint>
+	<ThreatLedger_Drawer_Summary>已勾选 {0} 项：{1} → {2}（{3}，{4}）</ThreatLedger_Drawer_Summary>
+	<ThreatLedger_WhatIf_Header>勾选你考虑处理掉的东西</ThreatLedger_WhatIf_Header>
+	<ThreatLedger_Filter_All>全部</ThreatLedger_Filter_All>
+	<ThreatLedger_Filter_Items>物品</ThreatLedger_Filter_Items>
+	<ThreatLedger_Filter_Buildings>建筑</ThreatLedger_Filter_Buildings>
+	<ThreatLedger_Filter_Pawns>小人</ThreatLedger_Filter_Pawns>
+	<ThreatLedger_WhatIf_Search>搜索……</ThreatLedger_WhatIf_Search>
+	<ThreatLedger_WhatIf_Empty>这张地图上找不到符合的项目。</ThreatLedger_WhatIf_Empty>
+	<ThreatLedger_WhatIf_Refresh>重新扫描</ThreatLedger_WhatIf_Refresh>
+	<ThreatLedger_WhatIf_Clear>清除勾选</ThreatLedger_WhatIf_Clear>
+	<ThreatLedger_WhatIf_Result>试算结果</ThreatLedger_WhatIf_Result>
+	<ThreatLedger_WhatIf_Now>现在</ThreatLedger_WhatIf_Now>
+	<ThreatLedger_WhatIf_After>处理后</ThreatLedger_WhatIf_After>
+	<ThreatLedger_WhatIf_RemovedWealth>减少的故事叙述者财富：{0}</ThreatLedger_WhatIf_RemovedWealth>
+	<ThreatLedger_WhatIf_RemainingWealth>剩余的故事叙述者财富：{0}</ThreatLedger_WhatIf_RemainingWealth>
+	<ThreatLedger_WhatIf_RemovedPawns>移除的小人：{0}</ThreatLedger_WhatIf_RemovedPawns>
+	<ThreatLedger_WhatIf_AfterRaid>袭击人数：现在 → 处理后</ThreatLedger_WhatIf_AfterRaid>
+	<ThreatLedger_WhatIf_Clamped>你勾选的总值超过整个殖民地的财富，因此结果被限制在最低可能值。</ThreatLedger_WhatIf_Clamped>
+	<ThreatLedger_WhatIf_Explain>每一行显示该项的市值，以及“只处理掉这一项”时下一场袭击会改变几点。可以同时勾选多项来合并计算。不会真的改动你的殖民地。</ThreatLedger_WhatIf_Explain>
+	<ThreatLedger_Row_Tip>市值：{0}\n计入故事叙述者财富：{1}\n只处理掉这一项：{2} 点</ThreatLedger_Row_Tip>
+
+	<ThreatLedger_Entry_AllItems>地图上的所有物品</ThreatLedger_Entry_AllItems>
+	<ThreatLedger_Entry_AllBuildings>地图上的所有建筑</ThreatLedger_Entry_AllBuildings>
+	<ThreatLedger_Entry_Floors>所有地板</ThreatLedger_Entry_Floors>
+	<ThreatLedger_Entry_Floors_Note>地板算作建筑，按半价计入。大基地铺满昂贵地板（黄金地砖、精致地毯）会累积起来，但普通地板对袭击几乎没有影响。</ThreatLedger_Entry_Floors_Note>
+	<ThreatLedger_Entry_Prisoners>囚犯</ThreatLedger_Entry_Prisoners>
+	<ThreatLedger_Entry_Prisoners_Note>囚犯不属于你的派系，因此既不增加财富也不增加小人点数。卖掉或释放囚犯不会改变袭击规模。</ThreatLedger_Entry_Prisoners_Note>
+	<ThreatLedger_Entry_SlaveTag>（奴隶）</ThreatLedger_Entry_SlaveTag>
+	<ThreatLedger_Entry_ChildTag>（儿童）</ThreatLedger_Entry_ChildTag>
+	<ThreatLedger_Entry_Colonist_Note>移除一位殖民者会同时扣掉他的市值，以及他作为小人的点数。他身上的装备仍算在物品里，除非你也一起勾选。</ThreatLedger_Entry_Colonist_Note>
+	<ThreatLedger_Entry_Slave_Note>奴隶无论是财富还是小人点数都只算 75%。</ThreatLedger_Entry_Slave_Note>
+	<ThreatLedger_Entry_Child_Note>有 Biotech 时，儿童按年龄计算：3 岁以下不计，13 岁一半，18 岁全额。</ThreatLedger_Entry_Child_Note>
+	<ThreatLedger_Entry_Animal_Note>这些动物能学会“出击”，所以除了市值之外，每只还会增加其战斗力 8% 的小人点数。</ThreatLedger_Entry_Animal_Note>
+	<ThreatLedger_Entry_Mech_Note>殖民地机械体除了市值之外，还会按财富增加其战斗力一定比例的小人点数。</ThreatLedger_Entry_Mech_Note>
+	<ThreatLedger_Entry_Subhuman_Note>亚人除了市值之外，还会按财富增加其战斗力一定比例的小人点数。</ThreatLedger_Entry_Subhuman_Note>
+	<ThreatLedger_Entry_NoPoints_Note>这些小人只增加市值，不提供任何小人点数（无法训练或倒地的动物、倒地的机械体）。</ThreatLedger_Entry_NoPoints_Note>
+
+	<!-- ================================== 派系 ==================================== -->
+	<ThreatLedger_Faction_Pirates>海盗</ThreatLedger_Faction_Pirates>
+	<ThreatLedger_Faction_Tribals>部落</ThreatLedger_Faction_Tribals>
+	<ThreatLedger_Faction_Mechanoids>机械族</ThreatLedger_Faction_Mechanoids>
+
+	<!-- ================================== 提示 ==================================== -->
+	<ThreatLedger_Help_NotesTitle>这个殖民地的提示</ThreatLedger_Help_NotesTitle>
+	<ThreatLedger_Note_NoMap>没有打开任何地图，没有数据可读取。</ThreatLedger_Note_NoMap>
+	<ThreatLedger_Note_NoAuthoritativeValue>此游戏版本没有报告威胁点数，因此只显示拆解值。</ThreatLedger_Note_NoAuthoritativeValue>
+	<ThreatLedger_Note_MultiplayerSafeMode>检测到多人模式。威胁账本只读取数值、绝不写入存档，且每次读取后都会还原随机数生成器，因此不会造成不同步。</ThreatLedger_Note_MultiplayerSafeMode>
+	<ThreatLedger_Note_ExternalFormula>似乎有其他模组改写了威胁公式。主数字仍是游戏本身的数值。</ThreatLedger_Note_ExternalFormula>
+	<ThreatLedger_Note_MultiplierUnreadable>此游戏版本至少有一个系数无法读取，显示为“?”并以 1 计算。</ThreatLedger_Note_MultiplierUnreadable>
+	<ThreatLedger_Note_NoWealthWatcher>无法读取殖民地财富，拆解结果将是空的。</ThreatLedger_Note_NoWealthWatcher>
+	<ThreatLedger_Note_NoPawnCounts>无法读取殖民者与动物，小人点数将为零。</ThreatLedger_Note_NoPawnCounts>
+	<ThreatLedger_Note_WealthMismatch>三个财富类别加总后与游戏本身的故事叙述者财富不符。这个游戏版本的拆解结果可能已经过时。</ThreatLedger_Note_WealthMismatch>
+	<ThreatLedger_Note_TemporaryMap>这是临时地图（营地、任务地点或降落点）。在这里游戏只把殖民者身上的装备和你的动物算成财富，所以物品与建筑卡片不适用。</ThreatLedger_Note_TemporaryMap>
+	<ThreatLedger_Note_FixedWealth>已开启“固定财富”难度：故事叙述者财富随时间增长，而不是按你拥有的东西计算，所以处理掉东西不会让袭击变小。</ThreatLedger_Note_FixedWealth>
+	<ThreatLedger_Note_WealthPlateau>故事叙述者财富已超过 1,000,000，财富曲线与每位殖民者的点数曲线在此都不再增加。处理掉部分财富，往往要降到这条线以下才会有变化——这就是许多试算项目显示 0 的原因。</ThreatLedger_Note_WealthPlateau>
+	<ThreatLedger_Note_ClampedToMin>你的殖民地规模很小，已套用游戏的最低袭击规模。</ThreatLedger_Note_ClampedToMin>
+	<ThreatLedger_Note_ClampedToMax>你的殖民地已达到游戏的 10,000 点上限，再变富有也不会让袭击更大。</ThreatLedger_Note_ClampedToMax>
+	<ThreatLedger_Notes_None>没有需要报告的事项。威胁账本能读取的数据都已成功读取。</ThreatLedger_Notes_None>
+	<ThreatLedger_Notes_Help>这是什么
+威胁账本是只读的。它只新增一个标签页，解释游戏已经算好的数字。它不改变平衡、不新增物品、不修补任何游戏方法，也不会在存档中留下任何东西，所以能与其他模组、所有 DLC 及多人模式安全共存。
+
+怎么使用
+点击屏幕下方的“威胁账本”标签页（不需要研究或建造任何东西）。左上角的大数字就是游戏下一场袭击真正会使用的数值。右侧的瀑布图显示它是怎么组成的：财富点数和小人点数加总成基础点数，再乘上适应性、难度与新殖民地系数。把鼠标移到任何一行上可以看详细说明。下方的卡片把财富拆成物品、生物、建筑三类，图表则显示最近几天威胁值的变化。
+
+试算改动
+点击最下方的“模拟试算”横条。勾选物品、建筑、殖民者、动物或地板，结果会立即更新，包括新的袭击人数。在卖掉那座黄金雕像或宰掉战犬之前先试算一下吧。不会真的改动你的殖民地。
+
+数字从哪里来
+财富取自地图本身的财富追踪器。威胁值直接向故事叙述者读取，公式中的每个系数（适应性、难度、新殖民地系数、下限）也都从游戏读取，因此在原版游戏中，拆解结果能完全重现游戏的数值。只有袭击人数是估算值。
+
+多人模式与性能
+任何数值都不会写回游戏，每次读取前后也会保存并还原随机数生成器，因此面板不会造成多人联机不同步。标签页关闭时，模组只会为趋势图每个游戏小时读取一次；在设置中关闭“记录威胁趋势”即可完全归零。</ThreatLedger_Notes_Help>
+	<ThreatLedger_Notes_BugReport>发现错误了吗？
+请到 https://github.com/HiDanny666/ThreatLedger/issues 报告，并附上游戏版本、模组列表与 Player.log。</ThreatLedger_Notes_BugReport>
+
+	<!-- ================================== 设置 ==================================== -->
+	<ThreatLedger_Setting_Header>外观与行为</ThreatLedger_Setting_Header>
+	<ThreatLedger_Setting_AnimationStyle>面板动画样式</ThreatLedger_Setting_AnimationStyle>
+	<ThreatLedger_Setting_AnimationStyle_Tip>选 0 可完全关闭动画。动画纯属外观效果，绝不会动到共用的随机数生成器。</ThreatLedger_Setting_AnimationStyle_Tip>
+	<ThreatLedger_Setting_SoundsEnabled>播放面板音效</ThreatLedger_Setting_SoundsEnabled>
+	<ThreatLedger_Setting_SoundStyle>面板音效样式</ThreatLedger_Setting_SoundStyle>
+	<ThreatLedger_Setting_TestSound>试听音效</ThreatLedger_Setting_TestSound>
+	<ThreatLedger_Setting_ShowWealth>显示财富卡片</ThreatLedger_Setting_ShowWealth>
+	<ThreatLedger_Setting_ShowFormula>显示公式瀑布图</ThreatLedger_Setting_ShowFormula>
+	<ThreatLedger_Setting_ShowRaidEstimate>显示袭击人数预估</ThreatLedger_Setting_ShowRaidEstimate>
+	<ThreatLedger_Setting_ShowWhatIf>启用模拟试算</ThreatLedger_Setting_ShowWhatIf>
+	<ThreatLedger_Setting_ShowNotes>显示警告横幅</ThreatLedger_Setting_ShowNotes>
+	<ThreatLedger_Setting_ShowTrend>显示威胁趋势图</ThreatLedger_Setting_ShowTrend>
+	<ThreatLedger_Setting_RecordHistory>记录威胁趋势（每个游戏小时读取一次）</ThreatLedger_Setting_RecordHistory>
+	<ThreatLedger_Setting_RecordHistory_Tip>这是标签页关闭时威胁账本唯一会做的事。读数只存在内存中，绝不存档。关闭后开销完全为零。</ThreatLedger_Setting_RecordHistory_Tip>
+	<ThreatLedger_Setting_PerformanceNote>性能：标签页关闭时，威胁账本只会每个游戏小时读取一次（若开启了趋势记录）。标签页打开时，每秒最多重新读取地图一次，物品扫描有缓存。关闭模拟试算即可移除唯一的地图扫描。</ThreatLedger_Setting_PerformanceNote>
+	<ThreatLedger_Setting_MultiplayerNote>多人模式运行中。威胁账本绝不写入存档，且每次读取后都会还原随机数生成器，因此不会造成不同步。</ThreatLedger_Setting_MultiplayerNote>
+
+	<!-- ================================ 动画样式 ================================== -->
+	<ThreatLedger_Anim_None>无</ThreatLedger_Anim_None>
+	<ThreatLedger_Anim_CountUp>1 - 数字滚动递增</ThreatLedger_Anim_CountUp>
+	<ThreatLedger_Anim_BarGrow>2 - 条形逐一长出</ThreatLedger_Anim_BarGrow>
+	<ThreatLedger_Anim_StackSweep>3 - 财富条形与趋势线扫入</ThreatLedger_Anim_StackSweep>
+	<ThreatLedger_Anim_FormulaReveal>4 - 公式逐行显示</ThreatLedger_Anim_FormulaReveal>
+	<ThreatLedger_Anim_Pulse>5 - 卡片淡入</ThreatLedger_Anim_Pulse>
+
+	<!-- ================================ 音效样式 ================================== -->
+	<ThreatLedger_Sound_DataTerminal>1 - 数据终端（电子哔声）</ThreatLedger_Sound_DataTerminal>
+	<ThreatLedger_Sound_Hydraulics>2 - 液压机构（低沉伺服音）</ThreatLedger_Sound_Hydraulics>
+	<ThreatLedger_Sound_PaperLedger>3 - 纸质账簿（翻页与轻敲声）</ThreatLedger_Sound_PaperLedger>
+	<ThreatLedger_Sound_ThreatAlarm>4 - 威胁警报（低沉号角）</ThreatLedger_Sound_ThreatAlarm>
+	<ThreatLedger_Sound_MinimalClick>5 - 极简点击（几乎听不见）</ThreatLedger_Sound_MinimalClick>
+
+</LanguageData>
