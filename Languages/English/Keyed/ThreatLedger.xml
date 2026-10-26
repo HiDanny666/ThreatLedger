@@ -145,6 +145,17 @@
 	<ThreatLedger_Trade_Note_CaravanPawn>A pawn sold from a caravan leaves with all of their gear. Only the wealth is counted here, not the pawn points they would have brought home.</ThreatLedger_Trade_Note_CaravanPawn>
 	<ThreatLedger_Trade_Note_Prisoner>A prisoner counts for neither wealth nor points; when sold, their weapon and inventory drop to the ground and then count as colony items.</ThreatLedger_Trade_Note_Prisoner>
 
+	<!-- RimWorld Together (nova.rimworldtogether) transfers -->
+	<ThreatLedger_RT_Trader>Another player (RimWorld Together)</ThreatLedger_RT_Trader>
+	<ThreatLedger_RT_Rows>Each thing sent and received</ThreatLedger_RT_Rows>
+	<ThreatLedger_RT_Send>Send</ThreatLedger_RT_Send>
+	<ThreatLedger_RT_Receive>Receive</ThreatLedger_RT_Receive>
+	<ThreatLedger_RT_Empty>Nothing offered yet. Set rows to "Offer" in the transfer window and this list shows, live, how much each one lowers the threat.</ThreatLedger_RT_Empty>
+	<ThreatLedger_RT_Footer>RimWorld Together always transfers whole stacks. What you offer leaves the map as soon as you press Trade or Gift (it comes back if the other player declines); received things count once they are on your map and the game next recounts wealth (at most about 2 in-game hours).</ThreatLedger_RT_Footer>
+	<ThreatLedger_RT_Note_Transfer>Player transfer: there is no silver, so only what you send and what you receive changes the threat.</ThreatLedger_RT_Note_Transfer>
+	<ThreatLedger_RT_Note_Caravan>Caravan transfer: your colony's threat does not change now. The numbers show the change once the caravan brings everything home.</ThreatLedger_RT_Note_Caravan>
+	<ThreatLedger_RT_Note_PawnGear>A pawn sent to another player leaves with everything they wear and carry, and their pawn points leave with them.</ThreatLedger_RT_Note_PawnGear>
+
 	<ThreatLedger_Entry_AllItems>All items on the map</ThreatLedger_Entry_AllItems>
 	<ThreatLedger_Entry_AllBuildings>All buildings on the map</ThreatLedger_Entry_AllBuildings>
 	<ThreatLedger_Entry_Floors>All floors</ThreatLedger_Entry_Floors>
@@ -200,7 +211,7 @@ HOW CROPS COUNT
 Plants growing on the map (your crops and trees alike) are not wealth at all: the game only counts haulable items, your buildings, floors and pawns. A hydroponics basin or plant pot counts as a building; a crop only counts once it is harvested, as produce at full item value. "Harvest: ready now" and "Harvest: all grown" add your crops as the produce they would give (average yield, with the difficulty crop yield factor and plant damage applied).
 
 TRADE THREAT IMPACT
-When you trade with a caravan, an orbital trader or a settlement, a "trade threat impact" panel appears next to the trade window. As you change counts it shows the threat after the whole deal and how much each buy and sell adds or removes. Silver is wealth too, so the silver you pay lowers it. Bought colonists and slaves add pawn points; a sold colonist leaves their weapon and inventory behind and takes their clothes. Close it with its X, or turn it off in the settings.
+When you trade with a caravan, an orbital trader or a settlement, a "trade threat impact" panel appears next to the trade window. As you change counts it shows the threat after the whole deal and how much each buy and sell adds or removes. Silver is wealth too, so the silver you pay lowers it. Bought colonists and slaves add pawn points; a sold colonist leaves their weapon and inventory behind and takes their clothes. With RimWorld Together it also opens beside the transfer window (rows set to "Offer" leave with their whole stack, a pawn with all their gear) and beside transfer requests from other players (what you would receive). Close it with its X, or turn it off in the settings.
 
 WHERE THE NUMBERS COME FROM
 Wealth comes from the map's own wealth tracker. The threat value is read straight from the storyteller, and every factor of the formula (adaptation, difficulty, new-colony factor, minimum) is read from the game too, so in vanilla the breakdown reproduces the game exactly. Only the raid head count is an estimate.

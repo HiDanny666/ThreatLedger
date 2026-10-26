@@ -3,7 +3,7 @@
 	<name>Threat Ledger</name>
 	<author>danny</author>
 	<packageId>danny.threatledger</packageId>
-	<modVersion>0.3.0</modVersion>
+	<modVersion>0.3.1</modVersion>
 	<url>https://github.com/HiDanny666/ThreatLedger</url>
 	<supportedVersions>
 		<li>1.6</li>
@@ -28,7 +28,7 @@ RimWorld decides raid size with a hidden formula and never tells you any of it. 
 
 [b]Add items (new in 0.3.0)[/b] - press "+ Add" in the drawer, search any item or buildable building, set count, material and quality, and see how much bigger the next raid gets. Harvest buttons turn your crops into the produce they would give (growing plants themselves are not wealth - only harvested produce counts).
 
-[b]Trade threat impact (new in 0.3.0)[/b] - a panel opens by itself beside every trade window (caravans, orbital traders, settlements, also in Multiplayer) and shows the threat after the deal and how much each buy and sell row adds or removes, silver included.
+[b]Trade threat impact (new in 0.3.0)[/b] - a panel opens by itself beside every trade window (caravans, orbital traders, settlements, also in Multiplayer and for RimWorld Together player transfers) and shows the threat after the deal and how much each buy and sell row adds or removes, silver included.
 
 [b]Read-only by design[/b] - zero Harmony patches, zero changes to game state, nothing in your save, and the random number generator is restored after every read. Safe with other mods, with every DLC, and in multiplayer.
 
@@ -36,7 +36,7 @@ RimWorld decides raid size with a hidden formula and never tells you any of it. 
 
 [u]How to use it:[/u] read the big number first - that is what the game will use. Follow the waterfall down to see which layer pushes it up. Before selling or demolishing something valuable, test it in the what-if drawer; before buying or building, add it under "+ Add"; when trading, read the panel beside the trade window. The Settings button at the top right opens the mod settings (5 animation styles, 5 sound styles, which sections to show, trend recording on/off, trade panel on/off).
 
-[u]Compatibility:[/u] tested with Multiplayer (Multifaction and async time, no desync next to the arbiter), MP Desync Fixes 0.3.3 and Combat Extended.
+[u]Compatibility:[/u] tested with Multiplayer (Multifaction and async time, no desync next to the arbiter), MP Desync Fixes 0.3.3 and Combat Extended. Works with RimWorld Together: it only reads, and the trade panel also opens beside RimWorld Together's transfer window and transfer requests.
 
 [u]Languages:[/u] English, 繁體中文, 简体中文.
 
@@ -61,7 +61,7 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 
 [b]新增物品試算（0.3.0 新增）[/b] - 在抽屜按「＋新增」，搜尋任何物品或可建造建築，設定數量、材質、品質，看下一場襲擊會變大多少。「收成」按鈕把作物換算成收成後的農產品（生長中的植物本身不算財富，收成後的農產品才算）。
 
-[b]交易威脅影響（0.3.0 新增）[/b] - 每次開啟交易視窗（商隊、軌道商船、據點，多人連線也可以），旁邊都會自動出現面板，顯示交易後的威脅點數，以及每一筆買入、賣出（含白銀）各增加或減少多少。
+[b]交易威脅影響（0.3.0 新增）[/b] - 每次開啟交易視窗（商隊、軌道商船、據點，多人連線與 RimWorld Together 的玩家轉移也可以），旁邊都會自動出現面板，顯示交易後的威脅點數，以及每一筆買入、賣出（含白銀）各增加或減少多少。
 
 [b]唯讀設計[/b] - 零 Harmony patch、不改動遊戲狀態、不在存檔留下任何東西，每次讀取後都會還原亂數產生器。與其他模組、所有 DLC 及多人模式相容。
 
@@ -69,7 +69,7 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 
 [u]怎麼使用：[/u] 先看大數字——那是遊戲真正會用的值。沿著瀑布圖往下看，找出是哪一層把威脅推高。要賣掉或拆除貴重東西之前，先在模擬試算抽屜裡試算；要購買或建造之前，在「＋新增」加入試算；交易時看交易視窗旁的面板。右上角「設定」可調整 5 種動畫、5 種音效、要顯示哪些區塊、是否記錄趨勢，以及是否顯示交易面板。
 
-[u]相容性：[/u] 已與 Multiplayer（多陣營、非同步時間，搭配仲裁者 0 次不同步）、MP Desync Fixes 0.3.3、Combat Extended 一起實測。
+[u]相容性：[/u] 已與 Multiplayer（多陣營、非同步時間，搭配仲裁者 0 次不同步）、MP Desync Fixes 0.3.3、Combat Extended 一起實測。也支援 RimWorld Together：只讀取不同步任何東西，交易面板也會出現在它的轉移視窗與轉移請求旁邊。
 
 [u]語言支援：[/u] English、繁體中文、简体中文。
 

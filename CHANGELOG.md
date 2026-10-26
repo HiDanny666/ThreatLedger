@@ -8,6 +8,40 @@ The format follows [Keep a Changelog](https://keepachangelog.com/), and versions
 
 ---
 
+## [0.3.1] - 2026-10-26
+
+Compatibility with RimWorld Together (`nova.rimworldtogether`, Workshop 3005289691).
+
+### Added
+
+- **RimWorld Together transfers in the trade threat panel.** Player-to-player trading in
+  RimWorld Together uses its own windows instead of `Dialog_Trade`, so the panel did not open
+  for them. It now opens beside both:
+  - the **transfer window** (what you send): every row set to "Offer" is a "Send" line. RimWorld
+    Together always sends whole stacks, and a pawn leaves with everything they wear and carry,
+    taking their pawn points with them;
+  - the **transfer request** (what another player sends you): every thing is a "Receive" line,
+    landing on the home map (gift / drop pod) or in your caravan (the answer to your own caravan
+    trade). While you answer a trade request from your settlement, the panel shows the whole
+    exchange: what you send and what you will receive.
+
+### Fixed
+
+- Mod detection now also finds Workshop copies listed with the `_steam` suffix (this happens
+  when a local copy with the same package id exists). Applies to RimWorld Together and to
+  Multiplayer (Multiplayer was still found through its fallback check before).
+
+### Notes
+
+- RimWorld Together is not lockstep: every player runs their own game. Threat Ledger stays
+  read-only (no Harmony patches, nothing spawned or destroyed, random state restored), so it
+  never touches anything RimWorld Together syncs, including its synchronous-visit patches.
+  Events another player sends you (raids included) are sized by RimWorld Together with
+  `StorytellerUtility.DefaultParmsNow` on your map, i.e. your own threat points - exactly the
+  number on the dashboard.
+
+---
+
 ## [0.3.0] - 2026-10-26
 
 Trading, adding items and crops: three new ways to ask "what would this do to my next raid?",

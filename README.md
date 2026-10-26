@@ -9,12 +9,19 @@ Threat Ledger adds one tab that lays the whole thing open — and lets you test 
 > The random number generator is saved and restored around every read.
 
 - **Game version:** RimWorld 1.6 / 1.7
-- **Current version:** 0.3.0 — see [What's new](#whats-new-in-030) and [CHANGELOG.md](CHANGELOG.md)
+- **Current version:** 0.3.1 — see [What's new](#whats-new-in-031) and [CHANGELOG.md](CHANGELOG.md)
 - **Languages:** English, 繁體中文, 简体中文
 - **Requires:** nothing (no Harmony, no other mods, no DLC)
 - **Bug reports:** https://github.com/HiDanny666/ThreatLedger/issues
 
 ---
+
+## What's new in 0.3.1
+
+- **RimWorld Together support** ([Workshop 3005289691](https://steamcommunity.com/sharedfiles/filedetails/?id=3005289691)) — the trade threat panel now also opens beside RimWorld Together's **transfer window** (rows set to "Offer" leave with their whole stack; a pawn leaves with everything they wear and carry, and their pawn points) and beside **transfer requests** from other players (what you would receive, on the home map or in your caravan). While you answer a trade request from your settlement it shows the whole exchange. RimWorld Together is not lockstep and Threat Ledger only reads, so nothing it syncs is touched.
+- **Fixed:** mods installed from the Workshop and listed with the `_steam` suffix (when a local copy with the same id exists) are now detected — RimWorld Together and Multiplayer.
+- Long names in the trade panel are shortened instead of wrapping onto the next row (hover for the full name).
+- Tested in game with RimWorld Together on its real transfer windows: 29/29 checks; 161 unit tests.
 
 ## What's new in 0.3.0
 
@@ -106,6 +113,7 @@ Open them with the **Settings** button in the panel, or *Options → Mod setting
 | Multiplayer (`rwmt.Multiplayer`) | Nothing written back, random numbers restored after every read, nothing added to the save; the panel, simulator and trade panel are client-local. With Multifaction, another player faction's colony is read as that faction. Tested with Multiplayer 0.11.5: host + arbiter at top speed for 50,754 ticks with the panel open, no desync |
 | MP Desync Fixes 0.3.3 | Compatible, tested together with Multifaction and async time |
 | Combat Extended | Compatible, tested |
+| RimWorld Together | Supported, tested. Not lockstep and Threat Ledger only reads, so nothing it syncs is touched. The trade panel also opens beside its transfer window and transfer requests (whole stacks; a pawn leaves with all their gear) |
 
 ## Performance
 
@@ -136,10 +144,17 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 > 每次讀取前後都會保存並還原亂數產生器。
 
 - **遊戲版本：** RimWorld 1.6 / 1.7
-- **目前版本：** 0.3.0（更新內容見下方「0.3.0 更新內容」與 [CHANGELOG.md](CHANGELOG.md)）
+- **目前版本：** 0.3.1（更新內容見下方「0.3.1 更新內容」與 [CHANGELOG.md](CHANGELOG.md)）
 - **語言：** English、繁體中文、简体中文
 - **前置需求：** 無（不需要 Harmony、其他模組或 DLC）
 - **錯誤回報：** https://github.com/HiDanny666/ThreatLedger/issues
+
+## 0.3.1 更新內容
+
+- **支援 RimWorld Together**（[Workshop 3005289691](https://steamcommunity.com/sharedfiles/filedetails/?id=3005289691)）：交易威脅影響面板現在也會出現在 RimWorld Together 的**轉移視窗**旁（設為「Offer」的列整疊離開；送出的角色帶走全身穿戴與攜帶的東西，以及角色點數），以及其他玩家送來的**轉移請求**旁（你會收到什麼，放到家園地圖或你的商隊）。從據點回覆交易請求時，會列出整筆交換。RimWorld Together 不是鎖步同步，威脅帳本又只讀取，不會碰到它同步的任何東西。
+- **修正**：從 Workshop 安裝、模組清單中帶 `_steam` 後綴的模組（同 ID 另有本機副本時）現在也偵測得到——RimWorld Together 與 Multiplayer 皆是。
+- 交易面板中過長的名稱改為截斷，不再換行壓到下一列（滑鼠移上去可看全名）。
+- 已載入 RimWorld Together 以它真實的轉移視窗在遊戲中實測：29/29 項；單元測試 161 項。
 
 ## 0.3.0 更新內容
 
@@ -213,6 +228,7 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 | 多人模式（`rwmt.Multiplayer`） | 不寫回任何數值、每次讀取後還原亂數、不新增存檔資料；面板、試算與交易面板都只在本機。開「多陣營」時，別的玩家陣營殖民地以該陣營身分讀取。已用 Multiplayer 0.11.5 測試：主機＋仲裁者最快速度 50,754 tick、開著面板，0 次不同步 |
 | MP Desync Fixes 0.3.3 | 相容，已在多陣營＋非同步時間下一起實測 |
 | Combat Extended | 相容，已實測 |
+| RimWorld Together | 支援，已實測。它不是鎖步同步、威脅帳本又只讀取，不會碰到它同步的東西。交易面板也會出現在它的轉移視窗與轉移請求旁（一律整疊；送出的角色帶走全身裝備） |
 
 ## 效能
 

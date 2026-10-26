@@ -145,6 +145,17 @@
 	<ThreatLedger_Trade_Note_CaravanPawn>从远行队卖出的小人连同全部装备一起离开。这里只计算财富，不计算他原本回家后会带来的小人点数。</ThreatLedger_Trade_Note_CaravanPawn>
 	<ThreatLedger_Trade_Note_Prisoner>囚犯本身不算财富也不算点数；卖出时他身上的武器和背包物品会掉在地上，之后算成殖民地物品。</ThreatLedger_Trade_Note_Prisoner>
 
+	<!-- RimWorld Together（nova.rimworldtogether）转移 -->
+	<ThreatLedger_RT_Trader>其他玩家（RimWorld Together）</ThreatLedger_RT_Trader>
+	<ThreatLedger_RT_Rows>每一项送出与收到</ThreatLedger_RT_Rows>
+	<ThreatLedger_RT_Send>送出</ThreatLedger_RT_Send>
+	<ThreatLedger_RT_Receive>收到</ThreatLedger_RT_Receive>
+	<ThreatLedger_RT_Empty>还没有提供任何东西。在转移窗口把行设为“Offer”，这里会实时列出每一项让威胁降低多少。</ThreatLedger_RT_Empty>
+	<ThreatLedger_RT_Footer>RimWorld Together 总是整堆转移。你提供的东西在按下 Trade 或 Gift 的那一刻就会离开地图（对方拒绝时会退回）；收到的东西要放到你的地图上、游戏下次重新计算财富时（最多约 2 游戏小时）才计入。</ThreatLedger_RT_Footer>
+	<ThreatLedger_RT_Note_Transfer>玩家间转移：没有白银往来，只有送出与收到的东西会改变威胁。</ThreatLedger_RT_Note_Transfer>
+	<ThreatLedger_RT_Note_Caravan>商队转移：殖民地的威胁现在不会变。数字表示商队把东西全部带回家之后的变化。</ThreatLedger_RT_Note_Caravan>
+	<ThreatLedger_RT_Note_PawnGear>送给其他玩家的角色会带走身上穿戴与携带的所有东西，他的角色点数也一起离开。</ThreatLedger_RT_Note_PawnGear>
+
 	<ThreatLedger_Entry_AllItems>地图上的所有物品</ThreatLedger_Entry_AllItems>
 	<ThreatLedger_Entry_AllBuildings>地图上的所有建筑</ThreatLedger_Entry_AllBuildings>
 	<ThreatLedger_Entry_Floors>所有地板</ThreatLedger_Entry_Floors>
@@ -200,7 +211,7 @@
 地图上正在生长的植物（包括你种的作物和树）完全不算财富：游戏只计算可搬运的物品、你拥有的建筑、地板和小人。水培盆、花盆本身算建筑；作物要收获变成农产品后，才按物品全额计入。按“收获：现在可收”或“收获：全部成熟”可以把作物换算成收获后的农产品加入试算（取平均产量，会套用难度的作物产量系数与植株受损程度）。
 
 交易威胁影响
-与商队、轨道商船或据点交易时，交易窗口旁会自动出现“交易威胁影响”面板。调整数量时，它会实时显示整笔交易让威胁点数变成多少，以及每一笔买入、卖出各增加或减少多少。白银也算财富，买东西付出的白银会让财富减少。买来的殖民者或奴隶会增加小人点数；卖掉殖民者时，他的武器和背包物品会留下，衣服会跟着离开。面板可用右上角 X 关闭，也可在设置中停用。
+与商队、轨道商船或据点交易时，交易窗口旁会自动出现“交易威胁影响”面板。调整数量时，它会实时显示整笔交易让威胁点数变成多少，以及每一笔买入、卖出各增加或减少多少。白银也算财富，买东西付出的白银会让财富减少。买来的殖民者或奴隶会增加小人点数；卖掉殖民者时，他的武器和背包物品会留下，衣服会跟着离开。使用 RimWorld Together 时，面板也会出现在转移窗口旁（设为“Offer”的行会整堆离开，角色会带走全身装备），以及其他玩家送来的转移请求旁（显示你会收到什么）。面板可用右上角 X 关闭，也可在设置中停用。
 
 数字从哪里来
 财富取自地图本身的财富追踪器。威胁值直接向故事叙述者读取，公式中的每个系数（适应性、难度、新殖民地系数、下限）也都从游戏读取，因此在原版游戏中，拆解结果能完全重现游戏的数值。只有袭击人数是估算值。

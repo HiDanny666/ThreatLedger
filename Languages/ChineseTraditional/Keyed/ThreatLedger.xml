@@ -145,6 +145,17 @@
 	<ThreatLedger_Trade_Note_CaravanPawn>從遠征隊賣出的小人連同全部裝備一起離開。這裡只計算財富，不計算他原本回家後會帶來的小人點數。</ThreatLedger_Trade_Note_CaravanPawn>
 	<ThreatLedger_Trade_Note_Prisoner>俘虜本身不算財富也不算點數；賣出時他身上的武器和背包物品會掉在地上，之後算成殖民地物品。</ThreatLedger_Trade_Note_Prisoner>
 
+	<!-- RimWorld Together（nova.rimworldtogether）轉移 -->
+	<ThreatLedger_RT_Trader>其他玩家（RimWorld Together）</ThreatLedger_RT_Trader>
+	<ThreatLedger_RT_Rows>每一項送出與收到</ThreatLedger_RT_Rows>
+	<ThreatLedger_RT_Send>送出</ThreatLedger_RT_Send>
+	<ThreatLedger_RT_Receive>收到</ThreatLedger_RT_Receive>
+	<ThreatLedger_RT_Empty>還沒有提供任何東西。在轉移視窗把列設成「Offer」，這裡會即時列出每一項讓威脅降低多少。</ThreatLedger_RT_Empty>
+	<ThreatLedger_RT_Footer>RimWorld Together 一律整疊轉移。你提供的東西在按下 Trade 或 Gift 的當下就會離開地圖（對方拒絕時會退回）；收到的東西要放到你的地圖上、遊戲下次重新計算財富時（最多約 2 遊戲小時）才算進去。</ThreatLedger_RT_Footer>
+	<ThreatLedger_RT_Note_Transfer>玩家間轉移：沒有白銀往來，只有送出與收到的東西會改變威脅。</ThreatLedger_RT_Note_Transfer>
+	<ThreatLedger_RT_Note_Caravan>商隊轉移：殖民地的威脅現在不會變。數字表示商隊把東西全部帶回家之後的變化。</ThreatLedger_RT_Note_Caravan>
+	<ThreatLedger_RT_Note_PawnGear>送給其他玩家的角色會帶走身上穿戴與攜帶的所有東西，他的角色點數也一起離開。</ThreatLedger_RT_Note_PawnGear>
+
 	<ThreatLedger_Entry_AllItems>地圖上的所有物品</ThreatLedger_Entry_AllItems>
 	<ThreatLedger_Entry_AllBuildings>地圖上的所有建築</ThreatLedger_Entry_AllBuildings>
 	<ThreatLedger_Entry_Floors>所有地板</ThreatLedger_Entry_Floors>
@@ -200,7 +211,7 @@
 地圖上正在生長的植物（包括你種的作物和樹）完全不算財富：遊戲只計算可搬運的物品、你擁有的建築、地板和小人。水耕盆、花盆本身算建築；作物要收成變成農產品後，才以物品全額計入。按「收成：現在可收」或「收成：全部成熟」可以把作物換算成收成後的農產品加入試算（取平均產量，會套用難度的作物產量係數與植株受損程度）。
 
 交易威脅影響
-和商隊、軌道商船或據點交易時，交易視窗旁會自動出現「交易威脅影響」面板。調整數量時，它會即時顯示整筆交易讓威脅點數變成多少，以及每一筆買入、賣出各增加或減少多少。白銀也算財富，買東西付出的白銀會讓財富減少。買來的殖民者或奴隸會增加小人點數；賣掉殖民者時，他的武器和背包物品會留下，衣服會跟著離開。面板可用右上角 X 關閉，也可在設定中停用。
+和商隊、軌道商船或據點交易時，交易視窗旁會自動出現「交易威脅影響」面板。調整數量時，它會即時顯示整筆交易讓威脅點數變成多少，以及每一筆買入、賣出各增加或減少多少。白銀也算財富，買東西付出的白銀會讓財富減少。買來的殖民者或奴隸會增加小人點數；賣掉殖民者時，他的武器和背包物品會留下，衣服會跟著離開。使用 RimWorld Together 時，面板也會出現在轉移視窗旁（設為「Offer」的列會整疊離開，角色會帶走全身裝備），以及其他玩家送來的轉移請求旁（顯示你會收到什麼）。面板可用右上角 X 關閉，也可在設定中停用。
 
 數字從哪裡來
 財富取自地圖本身的財富追蹤器。威脅值直接向故事敘述者讀取，公式中的每個係數（適應、難度、新殖民地係數、下限）也都從遊戲讀取，因此在原版遊戲中，拆解結果能完全重現遊戲的數值。只有襲擊人數是估算值。
