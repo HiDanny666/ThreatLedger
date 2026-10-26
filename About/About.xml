@@ -3,7 +3,7 @@
 	<name>Threat Ledger</name>
 	<author>danny</author>
 	<packageId>danny.threatledger</packageId>
-	<modVersion>0.2.1</modVersion>
+	<modVersion>0.3.0</modVersion>
 	<url>https://github.com/HiDanny666/ThreatLedger</url>
 	<supportedVersions>
 		<li>1.6</li>
@@ -26,11 +26,17 @@ RimWorld decides raid size with a hidden formula and never tells you any of it. 
 
 [b]What-if simulator[/b] - slide up the drawer and tick items, buildings, floors, colonists, slaves, animals or mechs to see the new threat and raid size instantly. Finally answer "should I keep that golden statue?" (Prisoners are listed too - they count for nothing.)
 
+[b]Add items (new in 0.3.0)[/b] - press "+ Add" in the drawer, search any item or buildable building, set count, material and quality, and see how much bigger the next raid gets. Harvest buttons turn your crops into the produce they would give (growing plants themselves are not wealth - only harvested produce counts).
+
+[b]Trade threat impact (new in 0.3.0)[/b] - a panel opens by itself beside every trade window (caravans, orbital traders, settlements, also in Multiplayer) and shows the threat after the deal and how much each buy and sell row adds or removes, silver included.
+
 [b]Read-only by design[/b] - zero Harmony patches, zero changes to game state, nothing in your save, and the random number generator is restored after every read. Safe with other mods, with every DLC, and in multiplayer.
 
 [u]How to get it in game:[/u] nothing to research, build or craft. A "threat ledger" tab appears at the bottom of the screen, next to Work / Assign / Health, as soon as you have a colony.
 
-[u]How to use it:[/u] read the big number first - that is what the game will use. Follow the waterfall down to see which layer pushes it up. Before selling or demolishing something valuable, test it in the what-if drawer. The Settings button at the top right opens the mod settings (5 animation styles, 5 sound styles, which sections to show, trend recording on/off).
+[u]How to use it:[/u] read the big number first - that is what the game will use. Follow the waterfall down to see which layer pushes it up. Before selling or demolishing something valuable, test it in the what-if drawer; before buying or building, add it under "+ Add"; when trading, read the panel beside the trade window. The Settings button at the top right opens the mod settings (5 animation styles, 5 sound styles, which sections to show, trend recording on/off, trade panel on/off).
+
+[u]Compatibility:[/u] tested with Multiplayer (Multifaction and async time, no desync next to the arbiter), MP Desync Fixes 0.3.3 and Combat Extended.
 
 [u]Languages:[/u] English, 繁體中文, 简体中文.
 
@@ -53,11 +59,17 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 
 [b]模擬試算[/b] - 拉起下方抽屜，勾選物品、建築、地板、殖民者、奴隸、動物或機械體，立即看到新的威脅值與襲擊人數。終於能回答「那座黃金雕像到底該不該留？」（俘虜也會列出——它們完全不計入。）
 
+[b]新增物品試算（0.3.0 新增）[/b] - 在抽屜按「＋新增」，搜尋任何物品或可建造建築，設定數量、材質、品質，看下一場襲擊會變大多少。「收成」按鈕把作物換算成收成後的農產品（生長中的植物本身不算財富，收成後的農產品才算）。
+
+[b]交易威脅影響（0.3.0 新增）[/b] - 每次開啟交易視窗（商隊、軌道商船、據點，多人連線也可以），旁邊都會自動出現面板，顯示交易後的威脅點數，以及每一筆買入、賣出（含白銀）各增加或減少多少。
+
 [b]唯讀設計[/b] - 零 Harmony patch、不改動遊戲狀態、不在存檔留下任何東西，每次讀取後都會還原亂數產生器。與其他模組、所有 DLC 及多人模式相容。
 
 [u]如何取得：[/u] 不需要研究、建造或製作任何東西。只要有殖民地，畫面下方就會出現「威脅帳本」分頁，就在工作／分配／健康旁邊。
 
-[u]怎麼使用：[/u] 先看大數字——那是遊戲真正會用的值。沿著瀑布圖往下看，找出是哪一層把威脅推高。要賣掉或拆除貴重東西之前，先在模擬試算抽屜裡試算。右上角「設定」可調整 5 種動畫、5 種音效、要顯示哪些區塊，以及是否記錄趨勢。
+[u]怎麼使用：[/u] 先看大數字——那是遊戲真正會用的值。沿著瀑布圖往下看，找出是哪一層把威脅推高。要賣掉或拆除貴重東西之前，先在模擬試算抽屜裡試算；要購買或建造之前，在「＋新增」加入試算；交易時看交易視窗旁的面板。右上角「設定」可調整 5 種動畫、5 種音效、要顯示哪些區塊、是否記錄趨勢，以及是否顯示交易面板。
+
+[u]相容性：[/u] 已與 Multiplayer（多陣營、非同步時間，搭配仲裁者 0 次不同步）、MP Desync Fixes 0.3.3、Combat Extended 一起實測。
 
 [u]語言支援：[/u] English、繁體中文、简体中文。
 

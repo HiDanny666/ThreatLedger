@@ -9,12 +9,20 @@ Threat Ledger adds one tab that lays the whole thing open — and lets you test 
 > The random number generator is saved and restored around every read.
 
 - **Game version:** RimWorld 1.6 / 1.7
-- **Current version:** 0.2.1 — see [CHANGELOG.md](CHANGELOG.md) for what changed
+- **Current version:** 0.3.0 — see [What's new](#whats-new-in-030) and [CHANGELOG.md](CHANGELOG.md)
 - **Languages:** English, 繁體中文, 简体中文
 - **Requires:** nothing (no Harmony, no other mods, no DLC)
 - **Bug reports:** https://github.com/HiDanny666/ThreatLedger/issues
 
 ---
+
+## What's new in 0.3.0
+
+- **Trade threat impact panel** — opens by itself beside every trade window (caravans, orbital traders, settlements; also Multiplayer's trade window). As you change counts it shows the threat after the deal, wealth gained / lost, pawns joining / leaving, and for **each bought or sold row** its wealth change and how many points it adds or removes (hover for the per-unit effect). Silver paid or received is its own row.
+- **Add-items simulation** — "+ Add" in the what-if drawer: search any item or buildable building, set count, material and quality, and see how much bigger the next raid gets. Combines with ticked removals.
+- **Crop harvest estimate** — "Harvest: ready now" / "Harvest: all grown" add your crops as the produce they would give.
+- **Multiplayer Multifaction fix** — another player faction's colony is now priced with that faction's own storyteller, difficulty, adaptation and pawns.
+- Tested with Multiplayer 0.11.5 + MP Desync Fixes 0.3.3 (host + arbiter at top speed, no desync) and with Combat Extended.
 
 ## Install
 
@@ -37,6 +45,8 @@ Nothing to research, build or craft. As soon as you have a colony, a **threat le
 | **Wealth cards** | Items, creatures and buildings (counted at half value): market value, what they count as, and the points each is responsible for |
 | **Threat trend** | Threat points over up to 20 in-game days, one sample per in-game hour, with 1-day and 7-day change |
 | **What-if simulator** | Click the bar at the bottom to slide it up. Tick items, buildings, floors, colonists, slaves, animals or mechs (filter + search) and see the new threat and raid size instantly |
+| **+ Add** | In the simulator: add any item or buildable building (count, material, quality) or your crops' harvest, and see the threat it adds |
+| **Trade threat impact** | Beside every trade window: the threat after the deal and the effect of each buy and sell row |
 | **Help & notes** | Plain-language explanation and any warnings about this colony |
 
 ## How to use it
@@ -47,7 +57,14 @@ Nothing to research, build or craft. As soon as you have a colony, a **threat le
 4. **Cards and chart** — which kind of wealth matters most, and whether threat is rising.
 5. **What-if** — before you sell, butcher or demolish anything valuable, tick it first. Removing a pawn takes away its market value *and* the points it was worth. Prisoners count for nothing.
 
+6. **+ Add** — before you buy, craft or build something valuable, add it: pick it, choose material and quality, type the count. Items count in full; buildings as installed, at half value.
+7. **Trading** — just open the trade. The panel beside it shows row by row what each purchase or sale does to the next raid. Bought colonists and slaves add pawn points and bring their gear; a sold colonist leaves their weapon and inventory behind. Close it with its X if you do not need it.
+
 Examples of what it answers: 100 tiles of carpet in a mid-game colony is worth about 4.7 points, so do not demolish your floor over it. Above 1,000,000 storyteller wealth, more wealth no longer increases raids at all.
+
+### How crops count
+
+Plants growing on the map — your crops and trees alike — are **not wealth at all**: the game only counts haulable items, your buildings and floors, and your pawns. A hydroponics basin or plant pot counts as a building; a crop only counts once harvested, as produce at full item value. A field of ripe rice does not attract raids; the rice in your freezer does. The harvest buttons in "+ Add" show how much a harvest will add (average yield, with the difficulty's crop yield and plant damage).
 
 ## The formula it explains
 
@@ -77,6 +94,7 @@ Open them with the **Settings** button in the panel, or *Options → Mod setting
 | Sound style | Data terminal, hydraulics, paper ledger, threat alarm, minimal click — or sound off |
 | Show sections | Wealth cards, formula waterfall, raid estimate, trend chart, warning banners, what-if simulator |
 | Record threat trend | One reading per in-game hour while the tab is closed. Turn off for a strict zero cost |
+| Show the trade threat impact panel | Opens the panel beside every trade window; it only computes while a trade is open |
 
 ## Compatibility
 
@@ -85,12 +103,15 @@ Open them with the **Settings** button in the panel, or *Options → Mod setting
 | Other mods | No Harmony patches; it only reads public game values |
 | Mods that rewrite the formula | Detected and reported. The game's own value is always the headline, and the what-if simulator follows the real formula |
 | DLC | Royalty, Ideology, Biotech (children, slaves, mechs), Anomaly (subhumans, pocket maps) and Odyssey use the same rules the game uses |
-| Multiplayer (`rwmt.Multiplayer`) | Nothing written back, random numbers restored after every read, nothing added to the save. Tested with Multiplayer 0.11.5, host + client, panel open on both sides: no desyncs |
+| Multiplayer (`rwmt.Multiplayer`) | Nothing written back, random numbers restored after every read, nothing added to the save; the panel, simulator and trade panel are client-local. With Multifaction, another player faction's colony is read as that faction. Tested with Multiplayer 0.11.5: host + arbiter at top speed for 50,754 ticks with the panel open, no desync |
+| MP Desync Fixes 0.3.3 | Compatible, tested together with Multifaction and async time |
+| Combat Extended | Compatible, tested |
 
 ## Performance
 
 - **Tab closed:** one reading per in-game hour for the trend chart (can be turned off). No tick, no game component, no patch.
 - **Tab open:** about **0.24 ms per frame**, or **0.35 ms** with the what-if simulator open (measured on a 1.2M-wealth colony). The map is only scanned while the simulator is open.
+- **Trade panel:** 0.04 µs per frame while no trade is open; while trading the deal is re-read twice a second (6-15 µs each).
 
 ## Bug reports
 
@@ -115,10 +136,18 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 > 每次讀取前後都會保存並還原亂數產生器。
 
 - **遊戲版本：** RimWorld 1.6 / 1.7
-- **目前版本：** 0.2.1（更新內容見 [CHANGELOG.md](CHANGELOG.md)）
+- **目前版本：** 0.3.0（更新內容見下方「0.3.0 更新內容」與 [CHANGELOG.md](CHANGELOG.md)）
 - **語言：** English、繁體中文、简体中文
 - **前置需求：** 無（不需要 Harmony、其他模組或 DLC）
 - **錯誤回報：** https://github.com/HiDanny666/ThreatLedger/issues
+
+## 0.3.0 更新內容
+
+- **交易威脅影響面板**：每次開啟交易視窗（商隊、軌道商船、據點；多人連線的交易視窗也可以）都會自動出現在旁邊。調整數量時即時顯示交易後的威脅點數、財富增減、小人加入／離開，以及**每一筆買入、賣出**的財富變化與點數增減（滑鼠移上去看平均每 1 個的影響）。付出或收到的白銀獨立一列。
+- **新增物品試算**：模擬試算抽屜的「＋新增」，搜尋任何物品或可建造建築，設定數量、材質、品質，看下一場襲擊會變大多少；可和勾選的移除項目合併計算。
+- **作物收成預估**：「收成：現在可收」「收成：全部成熟」把作物換算成收成後的農產品。
+- **多人連線「多陣營」修正**：查看別的玩家陣營殖民地時，改用該陣營自己的說書人、難度、適應係數與小人計算。
+- 已與 Multiplayer 0.11.5 + MP Desync Fixes 0.3.3（主機＋仲裁者最快速度，0 次不同步）及 Combat Extended 一起實測。
 
 ## 安裝
 
@@ -141,6 +170,8 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 | **財富卡片** | 物品、生物、建築（半價計算）的市值、計入值，以及各自造成的點數 |
 | **威脅趨勢** | 最多 20 個遊戲日的威脅點數變化，每遊戲小時取樣，並顯示近 1 天與近 7 天變化 |
 | **模擬試算** | 點下方橫條拉起抽屜，勾選物品、建築、地板、殖民者、奴隸、動物或機械體（可篩選、搜尋），立即看到新的威脅值與襲擊人數 |
+| **＋新增** | 在模擬試算裡加入任何物品或可建造建築（數量、材質、品質），或作物的收成，看會增加多少威脅 |
+| **交易威脅影響** | 每個交易視窗旁邊：交易後的威脅點數，以及每一筆買賣的影響 |
 | **說明與提示** | 白話說明，以及這個殖民地的警告事項 |
 
 ## 怎麼使用
@@ -151,7 +182,14 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 4. **卡片與趨勢圖**：哪一類財富影響最大、威脅是否在上升。
 5. **模擬試算**：要賣掉、宰殺或拆除貴重東西之前，先勾選試算。移除小人時會同時扣掉它的市值**和**小人點數；俘虜完全不計入。
 
+6. **＋新增**：要購買、製作或建造貴重東西之前，先加入試算：選物品、材質、品質，輸入數量。物品全額計入；建築以安裝後半價計算。
+7. **交易時**：直接開交易視窗，旁邊的面板會逐列顯示每一筆買賣對下一場襲擊的影響。買來的殖民者或奴隸會增加小人點數並帶來裝備；賣掉殖民者時武器和背包會留下。用不到可以按 X 關閉。
+
 它能回答的問題例如：中期殖民地的 100 格地毯只值約 4.7 點，不需要為此拆掉地板；故事敘述者財富超過 1,000,000 後，再增加財富也不會讓襲擊變大。
+
+### 作物怎麼算
+
+地圖上正在生長的植物（包括你種的作物和樹）**完全不算財富**：遊戲只計算可搬運的物品、你擁有的建築與地板、你的小人。水耕盆、花盆本身算建築；作物收成變成農產品後，才以物品全額計入。一整片成熟稻田不會吸引襲擊，冷凍庫裡的稻米才會。「＋新增」的收成按鈕可以看收成後會增加多少（平均產量，套用難度作物產量係數與植株受損程度）。
 
 ## 設定
 
@@ -163,6 +201,7 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 | 音效樣式 | 資料終端、液壓機構、紙本帳簿、威脅警報、極簡點擊，或關閉音效 |
 | 顯示區塊 | 財富卡片、公式瀑布圖、襲擊人數預估、趨勢圖、警告橫幅、模擬試算 |
 | 記錄威脅趨勢 | 分頁關閉時每遊戲小時讀取一次；關閉後成本完全為零 |
+| 交易時顯示交易威脅影響面板 | 在每個交易視窗旁邊顯示面板；只在交易視窗開著時計算 |
 
 ## 相容性
 
@@ -171,12 +210,15 @@ RimWorld 用一條隱藏的公式決定襲擊規模，而且從不告訴你。�
 | 其他模組 | 零 Harmony patch，只讀取公開的遊戲數值 |
 | 改寫公式的模組 | 主動偵測並回報；主數字永遠是遊戲本身的數值，模擬試算也跟著實際公式走 |
 | DLC | Royalty、Ideology、Biotech（兒童、奴隸、機械體）、Anomaly（亞人、口袋地圖）、Odyssey 皆以遊戲本身的規則計算 |
-| 多人模式（`rwmt.Multiplayer`） | 不寫回任何數值、每次讀取後還原亂數、不新增存檔資料。已用 Multiplayer 0.11.5 測試（主機＋客戶端、雙方都開面板）：0 次不同步 |
+| 多人模式（`rwmt.Multiplayer`） | 不寫回任何數值、每次讀取後還原亂數、不新增存檔資料；面板、試算與交易面板都只在本機。開「多陣營」時，別的玩家陣營殖民地以該陣營身分讀取。已用 Multiplayer 0.11.5 測試：主機＋仲裁者最快速度 50,754 tick、開著面板，0 次不同步 |
+| MP Desync Fixes 0.3.3 | 相容，已在多陣營＋非同步時間下一起實測 |
+| Combat Extended | 相容，已實測 |
 
 ## 效能
 
 - **分頁關閉時**：只為趨勢圖每遊戲小時讀取一次（可關閉）；沒有 tick、沒有 GameComponent、沒有 patch。
 - **分頁開啟時**：每幀約 **0.24 ms**，開啟模擬試算約 **0.35 ms**（120 萬財富的殖民地實測）。地圖只在模擬試算開啟時掃描。
+- **交易面板**：沒有交易時每幀 0.04 µs；交易中每秒讀取交易 2 次（每次 6～15 µs）。
 
 ## 錯誤回報
 

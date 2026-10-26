@@ -84,8 +84,8 @@
 
 	<!-- ================================ 模擬抽屜 ================================== -->
 	<ThreatLedger_Drawer_Title>模擬試算</ThreatLedger_Drawer_Title>
-	<ThreatLedger_Drawer_Hint>點一下，試算處理掉某樣東西後下一場襲擊會變成怎樣。</ThreatLedger_Drawer_Hint>
-	<ThreatLedger_Drawer_Summary>已勾選 {0} 項：{1} → {2}（{3}，{4}）</ThreatLedger_Drawer_Summary>
+	<ThreatLedger_Drawer_Hint>點一下，試算處理掉或新增某樣東西後下一場襲擊會變成怎樣。</ThreatLedger_Drawer_Hint>
+	<ThreatLedger_Drawer_Summary>{0} 項變動：{1} → {2}（{3}，{4}）</ThreatLedger_Drawer_Summary>
 	<ThreatLedger_WhatIf_Header>勾選你考慮處理掉的東西</ThreatLedger_WhatIf_Header>
 	<ThreatLedger_Filter_All>全部</ThreatLedger_Filter_All>
 	<ThreatLedger_Filter_Items>物品</ThreatLedger_Filter_Items>
@@ -94,17 +94,56 @@
 	<ThreatLedger_WhatIf_Search>搜尋……</ThreatLedger_WhatIf_Search>
 	<ThreatLedger_WhatIf_Empty>這張地圖上找不到符合的項目。</ThreatLedger_WhatIf_Empty>
 	<ThreatLedger_WhatIf_Refresh>重新掃描</ThreatLedger_WhatIf_Refresh>
-	<ThreatLedger_WhatIf_Clear>清除勾選</ThreatLedger_WhatIf_Clear>
+	<ThreatLedger_WhatIf_Clear>全部清除</ThreatLedger_WhatIf_Clear>
 	<ThreatLedger_WhatIf_Result>試算結果</ThreatLedger_WhatIf_Result>
 	<ThreatLedger_WhatIf_Now>現在</ThreatLedger_WhatIf_Now>
 	<ThreatLedger_WhatIf_After>處理後</ThreatLedger_WhatIf_After>
 	<ThreatLedger_WhatIf_RemovedWealth>減少的故事敘述者財富：{0}</ThreatLedger_WhatIf_RemovedWealth>
-	<ThreatLedger_WhatIf_RemainingWealth>剩餘的故事敘述者財富：{0}</ThreatLedger_WhatIf_RemainingWealth>
+	<ThreatLedger_WhatIf_AddedWealth>增加的故事敘述者財富：{0}</ThreatLedger_WhatIf_AddedWealth>
+	<ThreatLedger_WhatIf_RemainingWealth>之後的故事敘述者財富：{0}</ThreatLedger_WhatIf_RemainingWealth>
 	<ThreatLedger_WhatIf_RemovedPawns>移除的小人：{0}</ThreatLedger_WhatIf_RemovedPawns>
 	<ThreatLedger_WhatIf_AfterRaid>襲擊人數：現在 → 處理後</ThreatLedger_WhatIf_AfterRaid>
 	<ThreatLedger_WhatIf_Clamped>你勾選的總值超過整個殖民地的財富，因此結果被限制在最低可能值。</ThreatLedger_WhatIf_Clamped>
 	<ThreatLedger_WhatIf_Explain>每一列顯示該項的市值，以及「只處理掉這一項」時下一場襲擊會改變幾點。可以同時勾選多項來合併計算。不會真的改動你的殖民地。</ThreatLedger_WhatIf_Explain>
 	<ThreatLedger_Row_Tip>市值：{0}\n計入故事敘述者財富：{1}\n只處理掉這一項：{2} 點</ThreatLedger_Row_Tip>
+
+	<!-- ============================== 新增物品試算 ================================ -->
+	<ThreatLedger_Filter_Add>＋新增</ThreatLedger_Filter_Add>
+	<ThreatLedger_Add_Search>搜尋要新增的物品或建築……</ThreatLedger_Add_Search>
+	<ThreatLedger_Add_NoMatch>找不到符合的物品或建築。</ThreatLedger_Add_NoMatch>
+	<ThreatLedger_Add_Empty>從左邊清單點選物品或建築加入試算，再設定數量、材質與品質。\n\n也可以按上方的「收成」按鈕，把殖民地正在種的作物換算成收成後的農產品。\n\n這裡的東西都是假設，不會真的生成任何物品。</ThreatLedger_Add_Empty>
+	<ThreatLedger_Add_PickItem_Tip>點一下加入試算（以物品計，全額計入財富）。再點一次會讓數量 +1。</ThreatLedger_Add_PickItem_Tip>
+	<ThreatLedger_Add_PickBuilding_Tip>點一下加入試算（以「已安裝的建築」計，半價計入財富）。再點一次會讓數量 +1。</ThreatLedger_Add_PickBuilding_Tip>
+	<ThreatLedger_Add_RowTip>單價市值：{0}\n數量：{1}\n總市值：{2}\n計入故事敘述者財富：{3}\n只新增這一項：{4} 點</ThreatLedger_Add_RowTip>
+	<ThreatLedger_Add_BuildingNote>建築以「蓋好、安裝在地上」計算，故事敘述者財富只算一半。還裝在箱子裡（已打包）的建築算物品，全額計入。</ThreatLedger_Add_BuildingNote>
+	<ThreatLedger_Add_HarvestNow>收成：現在可收</ThreatLedger_Add_HarvestNow>
+	<ThreatLedger_Add_HarvestNow_Tip>把目前已經可以收成的作物，依現在的生長度換算成農產品加入試算。</ThreatLedger_Add_HarvestNow_Tip>
+	<ThreatLedger_Add_HarvestAll>收成：全部成熟</ThreatLedger_Add_HarvestAll>
+	<ThreatLedger_Add_HarvestAll_Tip>假設殖民地所有作物都長到 100% 後收成，換算成農產品加入試算。</ThreatLedger_Add_HarvestAll_Tip>
+	<ThreatLedger_Add_HarvestNote>來自 {0} 株作物的收成預估（平均值）。生長中的植物本身不算財富，收成後的農產品才會以物品計入。</ThreatLedger_Add_HarvestNote>
+	<ThreatLedger_Add_HarvestTag>（收成）</ThreatLedger_Add_HarvestTag>
+	<ThreatLedger_Add_NoHarvest>這張地圖上沒有符合條件的作物。</ThreatLedger_Add_NoHarvest>
+
+	<!-- ============================== 交易威脅影響 ================================ -->
+	<ThreatLedger_Trade_Title>交易威脅影響</ThreatLedger_Trade_Title>
+	<ThreatLedger_Trade_Subtitle>{0}　·　影響地圖：{1}</ThreatLedger_Trade_Subtitle>
+	<ThreatLedger_Trade_NoData>讀不到這筆交易或殖民地的資料。</ThreatLedger_Trade_NoData>
+	<ThreatLedger_Trade_After>交易後</ThreatLedger_Trade_After>
+	<ThreatLedger_Trade_WealthLine>財富 {0}／{1}，交易後故事敘述者財富 {2}</ThreatLedger_Trade_WealthLine>
+	<ThreatLedger_Trade_PawnLine>加入的小人：{0}　離開的小人：{1}</ThreatLedger_Trade_PawnLine>
+	<ThreatLedger_Trade_Rows>每一筆買賣</ThreatLedger_Trade_Rows>
+	<ThreatLedger_Trade_ColWealth>財富</ThreatLedger_Trade_ColWealth>
+	<ThreatLedger_Trade_ColPoints>點數</ThreatLedger_Trade_ColPoints>
+	<ThreatLedger_Trade_Buy>買入</ThreatLedger_Trade_Buy>
+	<ThreatLedger_Trade_Sell>賣出</ThreatLedger_Trade_Sell>
+	<ThreatLedger_Trade_Empty>還沒有設定任何買賣。調整交易視窗裡的數量，這裡就會即時顯示每一筆會讓威脅增加或減少多少。</ThreatLedger_Trade_Empty>
+	<ThreatLedger_Trade_RowTip>市值變化：{0}\n計入故事敘述者財富：{1}\n只做這一筆：{2} 點\n平均每 1 個：{3} 點</ThreatLedger_Trade_RowTip>
+	<ThreatLedger_Trade_Footer>白銀也算財富：買東西付出的白銀會讓財富減少。數字在交易確定後、遊戲下次重新計算財富時（最多約 2 遊戲小時）生效。</ThreatLedger_Trade_Footer>
+	<ThreatLedger_Trade_Note_Caravan>這是遠征隊的交易：殖民地現在的威脅不會變。下面的數字是「遠征隊把東西帶回家後」的變化。</ThreatLedger_Trade_Note_Caravan>
+	<ThreatLedger_Trade_Note_Gift>送禮模式：送出的東西會離開殖民地，換不到白銀。</ThreatLedger_Trade_Note_Gift>
+	<ThreatLedger_Trade_Note_PawnNoPoints>買來的這個小人只增加市值，不提供小人點數（例如還不會「出擊」的動物）。</ThreatLedger_Trade_Note_PawnNoPoints>
+	<ThreatLedger_Trade_Note_CaravanPawn>從遠征隊賣出的小人連同全部裝備一起離開。這裡只計算財富，不計算他原本回家後會帶來的小人點數。</ThreatLedger_Trade_Note_CaravanPawn>
+	<ThreatLedger_Trade_Note_Prisoner>俘虜本身不算財富也不算點數；賣出時他身上的武器和背包物品會掉在地上，之後算成殖民地物品。</ThreatLedger_Trade_Note_Prisoner>
 
 	<ThreatLedger_Entry_AllItems>地圖上的所有物品</ThreatLedger_Entry_AllItems>
 	<ThreatLedger_Entry_AllBuildings>地圖上的所有建築</ThreatLedger_Entry_AllBuildings>
@@ -132,6 +171,8 @@
 	<ThreatLedger_Note_NoMap>沒有開啟任何地圖，沒有資料可讀取。</ThreatLedger_Note_NoMap>
 	<ThreatLedger_Note_NoAuthoritativeValue>此遊戲版本沒有回報威脅點數，因此只顯示拆解值。</ThreatLedger_Note_NoAuthoritativeValue>
 	<ThreatLedger_Note_MultiplayerSafeMode>偵測到多人模式。威脅帳本只讀取數值、絕不寫入存檔，且每次讀取後都會還原亂數產生器，因此不會造成不同步。</ThreatLedger_Note_MultiplayerSafeMode>
+	<ThreatLedger_Note_OtherFaction>多人連線「多陣營」：這是另一個玩家陣營的殖民地。數值以該陣營自己的說書人、難度、適應係數和小人計算，和遊戲對這張地圖的算法相同。</ThreatLedger_Note_OtherFaction>
+	<ThreatLedger_Note_OtherFactionUnreadable>多人連線「多陣營」：這是另一個玩家陣營的殖民地，但無法切換到該陣營讀取，數值是以你自己陣營的說書人計算，可能不準。</ThreatLedger_Note_OtherFactionUnreadable>
 	<ThreatLedger_Note_ExternalFormula>似乎有其他模組改寫了威脅公式。主數字仍是遊戲本身的數值。</ThreatLedger_Note_ExternalFormula>
 	<ThreatLedger_Note_MultiplierUnreadable>此遊戲版本至少有一個係數無法讀取，顯示為「?」並以 1 計算。</ThreatLedger_Note_MultiplierUnreadable>
 	<ThreatLedger_Note_NoWealthWatcher>無法讀取殖民地財富，拆解結果將是空的。</ThreatLedger_Note_NoWealthWatcher>
@@ -152,11 +193,20 @@
 試算改動
 點最下方的「模擬試算」橫條。勾選物品、建築、殖民者、動物或地板，結果會立即更新，包含新的襲擊人數。在賣掉那座黃金雕像或宰掉戰犬之前先試算一下吧。不會真的改動你的殖民地。
 
+新增物品試算
+在模擬試算抽屜按「＋新增」。從清單搜尋任何物品或可建造的建築，點一下加入，再設定數量、材質與品質，就能看到「多了這些東西」下一場襲擊會變大多少。物品全額計入財富；建築以蓋好的狀態計算，只算半價。可以和勾選的移除項目一起合併計算。
+
+作物怎麼算
+地圖上正在生長的植物（包括你種的作物和樹）完全不算財富：遊戲只計算可搬運的物品、你擁有的建築、地板和小人。水耕盆、花盆本身算建築；作物要收成變成農產品後，才以物品全額計入。按「收成：現在可收」或「收成：全部成熟」可以把作物換算成收成後的農產品加入試算（取平均產量，會套用難度的作物產量係數與植株受損程度）。
+
+交易威脅影響
+和商隊、軌道商船或據點交易時，交易視窗旁會自動出現「交易威脅影響」面板。調整數量時，它會即時顯示整筆交易讓威脅點數變成多少，以及每一筆買入、賣出各增加或減少多少。白銀也算財富，買東西付出的白銀會讓財富減少。買來的殖民者或奴隸會增加小人點數；賣掉殖民者時，他的武器和背包物品會留下，衣服會跟著離開。面板可用右上角 X 關閉，也可在設定中停用。
+
 數字從哪裡來
 財富取自地圖本身的財富追蹤器。威脅值直接向故事敘述者讀取，公式中的每個係數（適應、難度、新殖民地係數、下限）也都從遊戲讀取，因此在原版遊戲中，拆解結果能完全重現遊戲的數值。只有襲擊人數是估算值。
 
 多人模式與效能
-任何數值都不會寫回遊戲，每次讀取前後也會保存並還原亂數產生器，因此面板不會造成多人連線不同步。分頁關閉時，模組只會為趨勢圖每個遊戲小時讀取一次；在設定中關閉「記錄威脅趨勢」即可完全歸零。</ThreatLedger_Notes_Help>
+任何數值都不會寫回遊戲，每次讀取前後也會保存並還原亂數產生器，因此面板不會造成多人連線不同步。開啟「多陣營」時，查看別的玩家陣營的殖民地會以該陣營自己的說書人計算。分頁關閉時，模組只會為趨勢圖每個遊戲小時讀取一次；在設定中關閉「記錄威脅趨勢」即可完全歸零。</ThreatLedger_Notes_Help>
 	<ThreatLedger_Notes_BugReport>發現錯誤了嗎？
 請到 https://github.com/HiDanny666/ThreatLedger/issues 回報，並附上遊戲版本、模組清單與 Player.log。</ThreatLedger_Notes_BugReport>
 
@@ -175,6 +225,8 @@
 	<ThreatLedger_Setting_ShowTrend>顯示威脅趨勢圖</ThreatLedger_Setting_ShowTrend>
 	<ThreatLedger_Setting_RecordHistory>記錄威脅趨勢（每個遊戲小時讀取一次）</ThreatLedger_Setting_RecordHistory>
 	<ThreatLedger_Setting_RecordHistory_Tip>這是分頁關閉時威脅帳本唯一會做的事。讀數只存在記憶體中，絕不存檔。關閉後成本完全為零。</ThreatLedger_Setting_RecordHistory_Tip>
+	<ThreatLedger_Setting_ShowTradeImpact>交易時顯示「交易威脅影響」面板</ThreatLedger_Setting_ShowTradeImpact>
+	<ThreatLedger_Setting_ShowTradeImpact_Tip>開啟交易視窗時，在旁邊自動顯示每一筆買賣對威脅點數的影響。只在交易視窗開著時才會計算。</ThreatLedger_Setting_ShowTradeImpact_Tip>
 	<ThreatLedger_Setting_PerformanceNote>效能：分頁關閉時，威脅帳本只會每個遊戲小時讀取一次（若有開啟趨勢記錄）。分頁開啟時，每秒最多重新讀取地圖一次，物品掃描有快取。關閉模擬試算即可移除唯一的地圖掃描。</ThreatLedger_Setting_PerformanceNote>
 	<ThreatLedger_Setting_MultiplayerNote>多人模式運作中。威脅帳本絕不寫入存檔，且每次讀取後都會還原亂數產生器，因此不會造成不同步。</ThreatLedger_Setting_MultiplayerNote>
 

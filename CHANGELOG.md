@@ -8,6 +8,58 @@ The format follows [Keep a Changelog](https://keepachangelog.com/), and versions
 
 ---
 
+## [0.3.0] - 2026-10-26
+
+Trading, adding items and crops: three new ways to ask "what would this do to my next raid?",
+and correct numbers for every player faction in Multiplayer.
+
+### Added
+
+- **Trade threat impact panel.** When a trade window opens (caravan, orbital trader,
+  settlement - vanilla `Dialog_Trade` or Multiplayer's `TradingWindow`), a panel opens beside
+  it on its own. As counts change it shows the threat after the whole deal, wealth gained /
+  lost, pawns joining / leaving, and for **every bought or sold row** its wealth change and
+  how many points it adds or removes (hover for the per-unit effect). Silver is its own row.
+  It follows what the game really does: bought things arrive as items (minified buildings too),
+  bought colonists or slaves add pawn points and bring their gear, a sold colonist leaves their
+  weapon and inventory behind and takes their clothes, a sold prisoner's dropped gear becomes
+  colony items; from a caravan everything is counted "as if brought home". Close it with its X
+  (stays closed until that trade ends) or switch it off in the settings.
+- **Add-items simulation ("+ Add" in the what-if drawer).** Search any of the ~1,100 items and
+  player-buildable buildings, click to add, then set count, material and quality. Items count
+  in full, buildings as installed (half value). Combines with the ticked removals; the result
+  card now shows wealth removed, wealth added and wealth afterwards.
+- **Crop harvest estimate.** "Harvest: ready now" and "Harvest: all grown" turn the colony's own
+  crops (sown plants, hydroponics basins, plant pots) into the produce they would give, using
+  the game's yield formula (growth, plant damage, difficulty crop yield) without its random
+  rounding.
+- Help page sections: adding items, **how crops count** (growing plants are not wealth at all;
+  only harvested produce counts), trade threat impact.
+- Setting: *Show the "trade threat impact" panel while trading*.
+
+### Fixed
+
+- **Multiplayer with Multifaction:** looking at another player faction's colony priced it with
+  *your* storyteller, difficulty and adaptation and found none of its pawns (Multiplayer keeps
+  these per faction). The panel, the trend sample and the what-if list now read that map as its
+  owner, through Multiplayer's own `PushFaction` / `PopFaction`, restored in the same frame.
+  A note says when this happens.
+
+### Changed
+
+- Small changes show one decimal (`+0.4` instead of `0`) in the trade panel and the add list.
+- "Clear ticks" is now "Clear all" (it also clears planned additions).
+
+### Compatibility and testing
+
+- Tested in game with Multiplayer 0.11.5 + MP Desync Fixes v0.3.3 (Multifaction and async time),
+  including 50,754 ticks at top speed next to the arbiter with the tab, drawer and additions
+  open: no desync. Tested with Combat Extended. Still no Harmony patch, no game component and
+  nothing in the save: the trade panel is opened by a small Unity object that polls the window
+  stack four times a second (0.04 us per frame when no trade is open).
+- 25 new unit assertions (161 total) and 31-39 in-game checks per variant; predictions match the
+  game exactly after really adding gold, walls, produce and executing a trade.
+
 ## [0.2.1] - 2026-10-20
 
 ### Fixed

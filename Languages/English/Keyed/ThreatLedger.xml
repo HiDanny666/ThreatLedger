@@ -84,8 +84,8 @@
 
 	<!-- ================================= drawer =================================== -->
 	<ThreatLedger_Drawer_Title>What-if simulator</ThreatLedger_Drawer_Title>
-	<ThreatLedger_Drawer_Hint>Click to test what getting rid of something would do to the next raid.</ThreatLedger_Drawer_Hint>
-	<ThreatLedger_Drawer_Summary>{0} ticked:  {1} -> {2}  ({3}, {4})</ThreatLedger_Drawer_Summary>
+	<ThreatLedger_Drawer_Hint>Click to test what getting rid of, or adding, something would do to the next raid.</ThreatLedger_Drawer_Hint>
+	<ThreatLedger_Drawer_Summary>{0} changes:  {1} -> {2}  ({3}, {4})</ThreatLedger_Drawer_Summary>
 	<ThreatLedger_WhatIf_Header>Tick anything you are thinking of getting rid of</ThreatLedger_WhatIf_Header>
 	<ThreatLedger_Filter_All>All</ThreatLedger_Filter_All>
 	<ThreatLedger_Filter_Items>Items</ThreatLedger_Filter_Items>
@@ -94,17 +94,56 @@
 	<ThreatLedger_WhatIf_Search>Search...</ThreatLedger_WhatIf_Search>
 	<ThreatLedger_WhatIf_Empty>Nothing matching was found on this map.</ThreatLedger_WhatIf_Empty>
 	<ThreatLedger_WhatIf_Refresh>Rescan map</ThreatLedger_WhatIf_Refresh>
-	<ThreatLedger_WhatIf_Clear>Clear ticks</ThreatLedger_WhatIf_Clear>
+	<ThreatLedger_WhatIf_Clear>Clear all</ThreatLedger_WhatIf_Clear>
 	<ThreatLedger_WhatIf_Result>Result</ThreatLedger_WhatIf_Result>
 	<ThreatLedger_WhatIf_Now>Now</ThreatLedger_WhatIf_Now>
 	<ThreatLedger_WhatIf_After>After</ThreatLedger_WhatIf_After>
 	<ThreatLedger_WhatIf_RemovedWealth>Storyteller wealth removed: {0}</ThreatLedger_WhatIf_RemovedWealth>
-	<ThreatLedger_WhatIf_RemainingWealth>Storyteller wealth remaining: {0}</ThreatLedger_WhatIf_RemainingWealth>
+	<ThreatLedger_WhatIf_AddedWealth>Storyteller wealth added: {0}</ThreatLedger_WhatIf_AddedWealth>
+	<ThreatLedger_WhatIf_RemainingWealth>Storyteller wealth afterwards: {0}</ThreatLedger_WhatIf_RemainingWealth>
 	<ThreatLedger_WhatIf_RemovedPawns>Pawns removed: {0}</ThreatLedger_WhatIf_RemovedPawns>
 	<ThreatLedger_WhatIf_AfterRaid>Raid size, now -> after</ThreatLedger_WhatIf_AfterRaid>
 	<ThreatLedger_WhatIf_Clamped>You have ticked more than the whole colony is worth, so the result is clamped to the lowest possible value.</ThreatLedger_WhatIf_Clamped>
 	<ThreatLedger_WhatIf_Explain>Each row shows its market value and how many points the next raid would change by if you removed only that. Tick several to combine them. Nothing in your colony is changed.</ThreatLedger_WhatIf_Explain>
 	<ThreatLedger_Row_Tip>Market value: {0}\nCounts as storyteller wealth: {1}\nRemoving only this: {2} points</ThreatLedger_Row_Tip>
+
+	<!-- ============================== Add items ================================== -->
+	<ThreatLedger_Filter_Add>+ Add</ThreatLedger_Filter_Add>
+	<ThreatLedger_Add_Search>Search an item or building to add...</ThreatLedger_Add_Search>
+	<ThreatLedger_Add_NoMatch>No item or building matches.</ThreatLedger_Add_NoMatch>
+	<ThreatLedger_Add_Empty>Click an item or building in the list on the left to add it, then set its count, material and quality.\n\nThe "Harvest" buttons above turn the crops your colony is growing into the produce they would give.\n\nEverything here is hypothetical; nothing is spawned.</ThreatLedger_Add_Empty>
+	<ThreatLedger_Add_PickItem_Tip>Click to add (as an item, counted at full value). Click again for +1.</ThreatLedger_Add_PickItem_Tip>
+	<ThreatLedger_Add_PickBuilding_Tip>Click to add (as an installed building, counted at half value). Click again for +1.</ThreatLedger_Add_PickBuilding_Tip>
+	<ThreatLedger_Add_RowTip>Unit market value: {0}\nCount: {1}\nTotal market value: {2}\nCounts as storyteller wealth: {3}\nAdding only this: {4} points</ThreatLedger_Add_RowTip>
+	<ThreatLedger_Add_BuildingNote>Buildings are priced as built and installed, which counts at half value. A building still packed in a crate (minified) is an item and counts in full.</ThreatLedger_Add_BuildingNote>
+	<ThreatLedger_Add_HarvestNow>Harvest: ready now</ThreatLedger_Add_HarvestNow>
+	<ThreatLedger_Add_HarvestNow_Tip>Adds the produce of every crop that can be harvested right now, at its current growth.</ThreatLedger_Add_HarvestNow_Tip>
+	<ThreatLedger_Add_HarvestAll>Harvest: all grown</ThreatLedger_Add_HarvestAll>
+	<ThreatLedger_Add_HarvestAll_Tip>Adds the produce of every crop as if it had grown to 100% and been harvested.</ThreatLedger_Add_HarvestAll_Tip>
+	<ThreatLedger_Add_HarvestNote>Estimated harvest from {0} plants (average yield). Growing plants are not wealth; only the harvested produce counts, as items.</ThreatLedger_Add_HarvestNote>
+	<ThreatLedger_Add_HarvestTag>(harvest)</ThreatLedger_Add_HarvestTag>
+	<ThreatLedger_Add_NoHarvest>No crops on this map match.</ThreatLedger_Add_NoHarvest>
+
+	<!-- ============================== Trade impact =============================== -->
+	<ThreatLedger_Trade_Title>Trade threat impact</ThreatLedger_Trade_Title>
+	<ThreatLedger_Trade_Subtitle>{0}  ·  affects map: {1}</ThreatLedger_Trade_Subtitle>
+	<ThreatLedger_Trade_NoData>Cannot read this trade or the colony.</ThreatLedger_Trade_NoData>
+	<ThreatLedger_Trade_After>After trade</ThreatLedger_Trade_After>
+	<ThreatLedger_Trade_WealthLine>Wealth {0} / {1}, storyteller wealth after trade {2}</ThreatLedger_Trade_WealthLine>
+	<ThreatLedger_Trade_PawnLine>Pawns joining: {0}   pawns leaving: {1}</ThreatLedger_Trade_PawnLine>
+	<ThreatLedger_Trade_Rows>Each buy and sell</ThreatLedger_Trade_Rows>
+	<ThreatLedger_Trade_ColWealth>Wealth</ThreatLedger_Trade_ColWealth>
+	<ThreatLedger_Trade_ColPoints>Points</ThreatLedger_Trade_ColPoints>
+	<ThreatLedger_Trade_Buy>Buy</ThreatLedger_Trade_Buy>
+	<ThreatLedger_Trade_Sell>Sell</ThreatLedger_Trade_Sell>
+	<ThreatLedger_Trade_Empty>Nothing set up yet. Change counts in the trade window and this list shows, live, how much each row raises or lowers the threat.</ThreatLedger_Trade_Empty>
+	<ThreatLedger_Trade_RowTip>Market value change: {0}\nCounts as storyteller wealth: {1}\nOnly this row: {2} points\nPer unit, on average: {3} points</ThreatLedger_Trade_RowTip>
+	<ThreatLedger_Trade_Footer>Silver is wealth too: the silver you pay lowers it. The numbers take effect once the deal is done and the game next recounts wealth (at most about 2 in-game hours).</ThreatLedger_Trade_Footer>
+	<ThreatLedger_Trade_Note_Caravan>This is a caravan trade: your colony's threat does not change now. The numbers show the change once the caravan brings everything home.</ThreatLedger_Trade_Note_Caravan>
+	<ThreatLedger_Trade_Note_Gift>Gift mode: what you give leaves the colony and brings no silver back.</ThreatLedger_Trade_Note_Gift>
+	<ThreatLedger_Trade_Note_PawnNoPoints>This pawn only adds market value and no pawn points (for example an animal that cannot be released yet).</ThreatLedger_Trade_Note_PawnNoPoints>
+	<ThreatLedger_Trade_Note_CaravanPawn>A pawn sold from a caravan leaves with all of their gear. Only the wealth is counted here, not the pawn points they would have brought home.</ThreatLedger_Trade_Note_CaravanPawn>
+	<ThreatLedger_Trade_Note_Prisoner>A prisoner counts for neither wealth nor points; when sold, their weapon and inventory drop to the ground and then count as colony items.</ThreatLedger_Trade_Note_Prisoner>
 
 	<ThreatLedger_Entry_AllItems>All items on the map</ThreatLedger_Entry_AllItems>
 	<ThreatLedger_Entry_AllBuildings>All buildings on the map</ThreatLedger_Entry_AllBuildings>
@@ -132,6 +171,8 @@
 	<ThreatLedger_Note_NoMap>No map is open, so there is nothing to read.</ThreatLedger_Note_NoMap>
 	<ThreatLedger_Note_NoAuthoritativeValue>This game version did not report a threat point value, so only the breakdown is shown.</ThreatLedger_Note_NoAuthoritativeValue>
 	<ThreatLedger_Note_MultiplayerSafeMode>Multiplayer detected. Threat Ledger only reads values, never writes to the save and restores the random generator after every read, so it cannot cause a desync.</ThreatLedger_Note_MultiplayerSafeMode>
+	<ThreatLedger_Note_OtherFaction>Multiplayer Multifaction: this colony belongs to another player faction. It is priced with that faction's own storyteller, difficulty, adaptation and pawns, exactly as the game prices this map.</ThreatLedger_Note_OtherFaction>
+	<ThreatLedger_Note_OtherFactionUnreadable>Multiplayer Multifaction: this colony belongs to another player faction, but Threat Ledger could not switch to it, so the values use your own faction's storyteller and may be off.</ThreatLedger_Note_OtherFactionUnreadable>
 	<ThreatLedger_Note_ExternalFormula>Another mod appears to have changed the threat formula. The headline number is still the game's own value.</ThreatLedger_Note_ExternalFormula>
 	<ThreatLedger_Note_MultiplierUnreadable>At least one multiplier could not be read on this game version. It is shown as "?" and counted as 1.</ThreatLedger_Note_MultiplierUnreadable>
 	<ThreatLedger_Note_NoWealthWatcher>Colony wealth could not be read. The breakdown will be empty.</ThreatLedger_Note_NoWealthWatcher>
@@ -152,11 +193,20 @@ Open the "threat ledger" tab at the bottom of the screen (no research or buildin
 TESTING A CHANGE
 Click the "What-if simulator" bar at the bottom. Tick items, buildings, colonists, animals or the floors and the result updates instantly, including the new raid size. Use it before selling that golden statue or butchering a war dog. Nothing in your colony is changed.
 
+ADDING ITEMS
+In the what-if drawer press "+ Add". Search any item or buildable building, click it to add it, then set count, material and quality to see how much bigger the next raid gets. Items count in full; buildings are priced as built, at half value. Additions combine with the ticked removals.
+
+HOW CROPS COUNT
+Plants growing on the map (your crops and trees alike) are not wealth at all: the game only counts haulable items, your buildings, floors and pawns. A hydroponics basin or plant pot counts as a building; a crop only counts once it is harvested, as produce at full item value. "Harvest: ready now" and "Harvest: all grown" add your crops as the produce they would give (average yield, with the difficulty crop yield factor and plant damage applied).
+
+TRADE THREAT IMPACT
+When you trade with a caravan, an orbital trader or a settlement, a "trade threat impact" panel appears next to the trade window. As you change counts it shows the threat after the whole deal and how much each buy and sell adds or removes. Silver is wealth too, so the silver you pay lowers it. Bought colonists and slaves add pawn points; a sold colonist leaves their weapon and inventory behind and takes their clothes. Close it with its X, or turn it off in the settings.
+
 WHERE THE NUMBERS COME FROM
 Wealth comes from the map's own wealth tracker. The threat value is read straight from the storyteller, and every factor of the formula (adaptation, difficulty, new-colony factor, minimum) is read from the game too, so in vanilla the breakdown reproduces the game exactly. Only the raid head count is an estimate.
 
 MULTIPLAYER AND PERFORMANCE
-No value is ever written back into the game, and the random number generator is saved and restored around every read, so the panel cannot desync a session. With the tab closed the mod only takes one reading per in-game hour for the trend chart; switch "record threat trend" off in the settings to make that zero.</ThreatLedger_Notes_Help>
+No value is ever written back into the game, and the random number generator is saved and restored around every read, so the panel cannot desync a session. With Multifaction on, another player faction's colony is priced with that faction's own storyteller. With the tab closed the mod only takes one reading per in-game hour for the trend chart; switch "record threat trend" off in the settings to make that zero.</ThreatLedger_Notes_Help>
 	<ThreatLedger_Notes_BugReport>FOUND A BUG?
 Report it at https://github.com/HiDanny666/ThreatLedger/issues - please include your game version, your mod list and Player.log.</ThreatLedger_Notes_BugReport>
 
@@ -175,6 +225,8 @@ Report it at https://github.com/HiDanny666/ThreatLedger/issues - please include 
 	<ThreatLedger_Setting_ShowTrend>Show the threat trend chart</ThreatLedger_Setting_ShowTrend>
 	<ThreatLedger_Setting_RecordHistory>Record threat trend (one reading per in-game hour)</ThreatLedger_Setting_RecordHistory>
 	<ThreatLedger_Setting_RecordHistory_Tip>The only thing Threat Ledger does while its tab is closed. Readings stay in memory and are never saved. Turn this off for a strict zero cost.</ThreatLedger_Setting_RecordHistory_Tip>
+	<ThreatLedger_Setting_ShowTradeImpact>Show the "trade threat impact" panel while trading</ThreatLedger_Setting_ShowTradeImpact>
+	<ThreatLedger_Setting_ShowTradeImpact_Tip>Opens next to the trade window and shows what each buy and sell does to threat points. It only computes while a trade window is open.</ThreatLedger_Setting_ShowTradeImpact_Tip>
 	<ThreatLedger_Setting_PerformanceNote>Performance: with the tab closed Threat Ledger only takes one reading per in-game hour (if trend recording is on). With it open the map is re-read at most once per second and the item scan is cached. Turning off the what-if simulator removes the only scan of the map.</ThreatLedger_Setting_PerformanceNote>
 	<ThreatLedger_Setting_MultiplayerNote>Multiplayer is active. Threat Ledger never writes to the save and restores the random generator after every read, so it cannot cause a desync.</ThreatLedger_Setting_MultiplayerNote>
 
